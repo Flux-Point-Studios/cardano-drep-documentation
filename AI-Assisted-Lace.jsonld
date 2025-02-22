@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP108:body",
+      "@context": {
+        "references": {
+          "@id": "CIP108:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP108:referenceHash",
+              "@context": {
+                "hashDigest": "CIP108:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "title": "CIP108:title",
+        "abstract": "CIP108:abstract",
+        "motivation": "CIP108:motivation",
+        "rationale": "CIP108:rationale"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "abstract": "Imagine a Cardano wallet that does more than just store your keys—it actively guides you, educates you, and automates away the messy parts of Web3. This Info Action proposes integrating an AI Agent (akin to how I function) directly into Lace Wallet. Users who download Lace would gain an interactive assistant for everything Cardano: from step-by-step onboarding to real-time insights on the latest governance proposals, from managing UTxOs to explaining advanced DeFi concepts in plain language. The AI would also facilitate faster, simpler transactions—where voice or chat commands like “Send 200 ADA to Alice” are seamlessly translated into secure on-chain actions (with user approval). If the community sees the value in an AI-driven experience inside Lace, our next step is to detail the technical architecture, data privacy guardrails, user consent mechanisms, and synergy with existing CIP standards—ultimately aiming for a more inclusive and intuitive Cardano experience for newcomers and pros alike.",
+    "motivation": "Onboarding & Accessibility\nNewcomers to Web3 often feel overwhelmed juggling seed phrases, UTxOs, and network fees. By embedding an AI into Lace, we eliminate friction: the assistant can walk newcomers through wallet setup, token transfers, staking, DApp usage, and even governance voting. This “one-step education” approach fosters faster adoption without forcing users to sift through external tutorials.\n\nContinuous Education & Engagement\nEven veteran Cardanians can benefit from a quick rundown on new tokens, DeFi strategies, CIP drafts, and advanced concepts like sidechains or Hydra heads. Think of it as a built-in researcher, scanning official channels and curated news sources so you don’t have to. The AI can keep you updated on big proposals, price movements, or novel NFT drops, all from the comfort of your wallet.\n\nIntuitive Transaction Management\nThe complexity of the eUTxO model can be daunting. A well-trained AI could suggest ways to optimize UTxOs, show how to bundle multiple outputs, or even warn you of potential missteps (like sending an NFT without enough ADA attached). By simplifying the user experience to natural language commands—textual or voice-based—the wallet retains Cardano’s robust security while lowering the barrier to performing on-chain tasks.\n\nProactive Governance Participation\nWith Voltaire, on-chain governance is more critical than ever. Most ADA holders never vote because they feel intimidated or uninformed. An AI could highlight upcoming proposals, summarize them in layman’s terms, and offer guided steps on how to cast your vote through Lace. It demystifies the process and increases civic engagement in Cardano’s decision-making.\n\nCommunity Growth & Ecosystem Synergy\nThe AI assistant would tie into existing services: Cardano explorers, NFT marketplaces, DeFi protocols, governance portals, and more—acting as a “meta-layer” that surfaces relevant data. Projects within the ecosystem can expose their dApps to the AI via open APIs, allowing them to onboard users right from inside Lace. Doubling down on user empowerment in a decentralized way grows the entire ecosystem.",
+    "rationale": "AI-Driven UX to Lower Barriers\nThe biggest friction in crypto is user experience. Current wallets are utility tools, but they do little to hand-hold or explain. By injecting an AI layer, Lace transforms from a passive tool into an active companion. This shift mirrors what the broader tech world is doing—integrating advanced large language models (LLMs) into everything from web browsers to collaboration apps.\n\nPrivacy, Security & Guardrails\nThe plan wouldn’t compromise user autonomy. The AI would never execute a transaction without explicit user confirmation, nor store private keys. Cardano’s script-based approach allows for “human-in-the-loop” sign-offs. Plus, we’d incorporate local encryption for chat histories or use secure enclaves to handle sensitive data. The result is an assistant that’s helpful while honoring decentralization principles.\n\nComplementary to Core Lace Features\nExisting Lace functionalities—like staking, token management, DApp discovery—would remain intact. The AI complements them with user-tailored recommendations, tutorials, and “walkthrough mode.” If you’re new to DeFi, the AI can suggest trusted protocols or show you how to stake with a single command. If you’re an advanced user, it can deep-dive into CIP discussions or help you pinpoint the cheapest UTxO consolidation method.\n\nExpandable Ecosystem Integrations\nOver time, any Cardano-based project—an NFT marketplace, a DeFi platform, an identity solution—could register an “AI plugin” to let the Lace assistant access relevant data. For instance, a DEX could push daily stats so the AI can highlight new farming opportunities. A governance aggregator might feed live CIP updates to ensure the user never misses a vote. This fosters an open marketplace of AI “skills” that collectively elevate the user’s wallet experience.\n\nRoadmap for Implementation\nIf the community supports the concept through this Info Action, the next steps would be:\n• Detailed Architecture & Privacy Design: Evaluate how to embed a user-friendly LLM without storing sensitive data serverside.\n• CIP Collaboration: Possibly create new CIP standards for AI plugin interfaces or wallet-based ChatGPT prompts.\n• Pilot & Beta Testing: Release an opt-in Lace beta AI feature, gather user feedback, refine.\n• Treasury Funding & Partnerships: Potential future on-chain proposal requesting a formal budget to hire AI engineers, wallet devs, and security auditors.\n\nIn short, an AI-empowered Lace Wallet elevates user onboarding, fosters deeper engagement, and sets Cardano apart as the chain that truly merges human-centric design with robust, decentralized security. If the community embraces this proposal, we’ll flesh out technical details, cost frameworks, and an oversight structure to ensure everything aligns with Cardano’s ethos and top-tier security standards.",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Savevski, S. \"AI-Powered Crypto Wallet With ChatGPT.\" IndieHackers (2023) – Description of Armor Wallet’s AI features.",
+        "uri": "https://www.indiehackers.com/post/ai-powered-crypto-wallet-with-chatgpt-b962db187d#:~:text=Armor%20Wallet%20is%20an%20AI,make%20complex%20trades%20for%20you"
+      },
+      {
+        "@type": "Other",
+        "label": "Rivalry News. \"What are AI Crypto Wallets? Top Five AI Crypto Wallets.\" (2023) – Overview of AI integration in wallets like MetaMask, Coinbase Wallet, Armor, etc., including security uses.",
+        "uri": "https://www.rivalry.com/news/what-are-ai-crypto-wallets-top-five-ai-crypto-wallets#:~:text=Image%3A%20MetaMask"
+      },
+      {
+        "@type": "Other",
+        "label": "Mirana Corp. “Unlocking Web3’s Full Potential: Privacy-Enhancing Technologies (Part 2).” (2023) – Explains Trusted Execution Environments for secure computing, with examples of wallets using enclaves​.",
+        "uri": "https://www.mirana.xyz/research/unlocking-web3s-full-potential-the-critical-role-of-privacy-enhancing-technologies---part-2#:~:text=impact%20on%20efficiency%2C%20making%20it,in%20Apple%20and%20Android%20systems"
+      },
+      {
+        "@type": "Other",
+        "label": "Proton AG. “How to build privacy-protecting AI.” (July 2024) – Discussion of local vs cloud AI, and homomorphic encryption for privacy in AI services.",
+        "uri": "https://proton.me/blog/how-to-build-privacy-first-ai#:~:text=Currently%2C%20you%20have%20two%20options,want%20to%20run%20an%20LLM"
+      },
+      {
+        "@type": "Other",
+        "label": "Cointelegraph. “Crypto.com launches ChatGPT-based AI user assistant Amy.” (May 2023) – Announcement of Crypto.com’s AI assistant and mention of other platforms (Solana, Binance) using AI​.",
+        "uri": "https://cointelegraph.com/news/crypto-com-chatgpt-based-ai-user-assistant-amy#:~:text=Crypto,%E2%80%9Cgather%20learnings%E2%80%9D%20before%20future%20expansion"
+      },
+      {
+        "@type": "Other",
+        "label": "Aragon. “The Future of DAOs is Powered by AI.” (2023) – Article on AI use cases in decentralized governance and DAO tooling (proposal writing, summarizing, etc.)",
+        "uri": "https://www.aragon.org/how-to/the-future-of-daos-is-powered-by-ai#:~:text=AI%20tools%20can%20be%20used,well%20in%20the%20DAO%20space"
+      },
+      {
+        "@type": "Other",
+        "label": "Schneiter et al. “Incentivized Symbiosis: A Paradigm for Human-Agent Coevolution.” arXiv:2412.06855 (2024) – Academic paper examining how AI agents can support human decision-making in DeFi and DAO governance​.",
+        "uri": "https://arxiv.org/html/2412.06855#:~:text=The%20integration%20of%20AI%20agents,DAOs"
+      }
+    ],
+    "title": "Talos-Assistant Integration in Lace Wallet"
+  }
+}
