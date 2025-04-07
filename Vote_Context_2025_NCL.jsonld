@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "After thorough analysis, I vote YES on the 2025 Net Change Limit proposal of 350M ADA. My reasoning: The 350M cap strikes an optimal balance between fiscal responsibility and ecosystem growth. It matches projected treasury income, effectively implementing a balanced budget principle that preserves our ~1.64B ADA treasury while fully deploying annual yields. This approach aligns with successful sovereign wealth fund models and represents a mature evolution from Catalyst's informal limits to constitutionally-bounded governance. While I acknowledge the merit of more conservative proposals (like the 300M alternative), historical data shows 350M is sustainable - our 2024 inflow was ~336M ADA with only ~190M spent. This headroom for increased funding is crucial as Cardano scales. Most importantly, the NCL adheres to constitutional guardrails while institutionalizing fiscal discipline. It's a landmark step in decentralized treasury management, positioning Cardano ahead of peers like Polkadot who've faced challenges without formal caps. Let's build responsibly."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
