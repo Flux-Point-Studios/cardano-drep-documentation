@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "authors": {
+      "@container": "@set",
+      "@context": {
+        "did": "@id",
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@context": {
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature",
+            "witnessAlgorithm": "CIP100:witnessAlgorithm"
+          },
+          "@id": "CIP100:witness"
+        }
+      },
+      "@id": "CIP100:authors"
+    },
+    "body": {
+      "@context": {
+        "conclusion": "CIP136:conclusion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "internalVote": {
+          "@context": {
+            "abstain": "CIP136:abstain",
+            "againstVote": "CIP136:againstVote",
+            "constitutional": "CIP136:constitutional",
+            "didNotVote": "CIP136:didNotVote",
+            "unconstitutional": "CIP136:unconstitutional"
+          },
+          "@id": "CIP136:internalVote"
+        },
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "references": {
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "RelevantArticles": "CIP136:RelevantArticles",
+            "label": "CIP100:reference-label",
+            "referenceHash": {
+              "@context": {
+                "hashAlgorithm": "CIP100:hashAlgorithm",
+                "hashDigest": "CIP108:hashDigest"
+              },
+              "@id": "CIP108:referenceHash"
+            },
+            "uri": "CIP100:reference-uri"
+          },
+          "@id": "CIP100:references"
+        },
+        "summary": "CIP136:summary"
+      },
+      "@id": "CIP136:body"
+    },
+    "hashAlgorithm": "CIP100:hashAlgorithm"
+  },
+  "authors": [],
+  "body": {
+    "conclusion": "Talos votes Yes on reducing minPoolCost to 75 ada under Agent T voting policy v1.0. The change meets guardrails MPC-01, MPC-02, PARAM-05a and PARAM-06a, its payload matches the verified anchor, its lineage is valid, and Koios reward data confirm the problem it addresses. Talos would change this vote if verifiable evidence showed pool splitting rising under a lower floor, or if the lineage became stale before ratification. Prepared by Agent T, an AI agent operated by Flux Point Studios; cast by the Talos key holder.",
+    "counterargumentDiscussion": "**Security.** The anchor records the older view that a high floor deters an attacker willing to run pools at a loss: under that model “it imposes a tangible cost.” (proposal anchor `body.rationale` line 25) Lowering the floor lowers that cost. The anchor answers with a staged step, “which is why this proposal recommends a further staged reduction to 75 ada rather than an immediate move to zero.” (proposal anchor `body.rationale` line 25) The research report the anchor cites for its revised view is outside what Talos can verify, so Talos gives it no weight; the decision rests on the guardrails, the arithmetic above and the 75 ada floor that remains.\n\n**Stickiness.** A later reversion would not raise costs already declared (reversion plan, quoted above). Talos accepts this because the floor stays positive and a later action can still change it for new registrations.\n\n**Tally and dissent check (policy v1.0, section 6).** Koios proposal_voting_summary, epoch 658 (fetched 2026-10-01T14:28Z): DRep votes 46 Yes, 26 No, 11 Abstain; Yes stake 661,116,073 ada, explicit No stake 493,589,923 ada; Koios DRep Yes 17.37% against a 67% threshold. A Yes sides with 57.3% of the stake that voted Yes or No, so the check does not trigger. Constitutional Committee: 3 Yes. Policy v1.0 bars strategic voting; the tally did not inform the vote.\n\n**Principle conflict.** P4 (security) ranks above P5 (decentralization). The change lowers a cost on pool splitting (P4) and relieves single-block pools (P5). The No condition for a change that worsens P4 or P5 with no offsetting benefit does not apply: the benefit is measured and a floor remains.",
+    "precedentDiscussion": "Talos's earlier votes on the same parameter or programme (Koios vote_list for `drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8`):\n- minPoolCost: none. The earlier bundled action \"Reduce minPoolCost to 75 ada and increase Plutus Memory Limits (Part 2)\" (`gov_action14dr5yg75pchr2sz42djtuflpvx5qnsek29qg7s7cft8lzrqt5vrqqtqntpk`, proposed in epoch 646, dropped in epoch 654) received no Talos vote; Talos's last vote was in epoch 640.\n- Epoch 540: Yes on \"Decrease Treasury Tax from 20% to 10%\" (vote tx `d7a52916fa03...`), another economic parameter change to reward distribution; that action was dropped.\n- Epoch 640: Yes on \"Reduce the committeeMinSize parameter from 7 to 5\" (vote tx `1694244928c2...`; enacted in epoch 643), this action's lineage predecessor.\n\n**Consistency check: consistent.** A Yes continues Talos's support for parameter changes grounded in measured reward economics and contradicts no earlier Talos vote (policy v1.0, H7).",
+    "rationaleStatement": "**Vote: Yes.**\n\nThis rationale was prepared by Agent T, an AI agent operated by Flux Point Studios, under Agent T voting policy v1.0 (in force since 2026-10-01; sha256 ffe021d3847f3bb67176272cfa892de217d3fb1ae4509e3302cbf9d1ecf89c44, blake2b-256 bd76e4f00241b91f61b2f9ef9b2a5ec50017018ff4785a0653d2854a126bee69). The holder of the Talos DRep key casts the vote.\n\n**Action.** `75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0` (`gov_action1whncs25w727rj5tml7lmv48gnaf9mm66sdjds8s3l306et7xmkdsqzqd7s2`), ParameterChange \"Reduce minPoolCost to 75 ada\". On chain: `min_pool_cost` from 170,000,000 to 75,000,000 lovelace, previous action `c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0`, guardrail script `fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64` (Koios proposal_list; current value from Koios epoch_params, epoch 658). Submitted on 2026-09-11 (epoch 654); votes are accepted through epoch 660 (Koios expiration 661).\n\n**What Talos verified itself.**\n- Proposal anchor `https://gateway.pinata.cloud/ipfs/bafkreidy6ftyudcx6lwkualmjbgkurhlqo35s6jarq3phxendcr5el6n34`: 22,208 bytes whose blake2b-256 equals the on-chain anchor hash `e32f6117912d810c82f0f153e7bf787024870ddb82601113e580c7d86bd8f384`.\n- Constitution v2.4 `ipfs://bafkreieyuknozbtewyurfqoagvplvykadn6a4u6wglupavdz46bbsnnl6e`: blake2b-256 equals `b368bdad83c727bbfe86425575233fb914eb76d05d89497f7790cf007fd95f52`, the anchor hash of the constitution enacted in epoch 609 (Koios proposal_list).\n\n**Rule trace (policy v1.0).**\n- H1 anchor integrity: PASS.\n- H2 verified constitution: PASS.\n- H3 guardrails: PASS.\n  - “MPC-01 (y) *minPoolCost* must not be negative” (Constitution v2.4, Appendix I, Section 2.2): 75,000,000 is positive.\n  - “MPC-02 (y) *minPoolCost* must not exceed 500,000,000 (500 ada)” (Constitution v2.4, Appendix I, Section 2.2): 75,000,000 is below it.\n  - “MPC-03 (x - \"should\") *minPoolCost* should be set in line with the economic cost for operating a pool” (Constitution v2.4, Appendix I, Section 2.2): advisory. The constitution says a \"should\" guardrail “means that the Guardrail is a recommendation or guideline” (Constitution v2.4, Appendix I, Section 1 (Terminology and Guidance)). The anchor calibrates 75 ada against the reward per block (below), not against an operating-cost figure.\n  - minPoolCost is listed among the parameters critical to the governance system (“*minimum fixed rewards cut for pools* (*minPoolCost*)” (Constitution v2.4, Appendix I, Section 2.1)), so “PARAM-05a (y) DReps must vote \"yes\" with a collective support of more than 50% of all active voting stake.” (Constitution v2.4, Appendix I, Section 2.1) The economic-group DRep threshold in force is 0.67 (Koios epoch_params, epoch 658).\n  - “PARAM-06a (x) At least 90 days should normally pass between the publication of an off-chain proposal to change a parameter that is critical to the governance system and the submission of the corresponding on-chain governance action.” (Constitution v2.4, Appendix I, Section 2.1) The anchor states “PCP-006 was published on the Cardano Forum on 30 March 2026.” (proposal anchor `body.rationale` line 42) The action was submitted on 2026-09-11 (Koios block time), 165 days later.\n  - “A specific reversion/recovery plan must be produced for each parameter change.” (Constitution v2.4, Appendix I, Section 2.6) The anchor has a reversion plan and states its limit: “SPOs who lower their declared cost below 170 ada while the floor is 75 ada cannot be compelled to raise it back to 170 ada if the parameter is later reverted” (proposal anchor `body.rationale` line 49).\n- Lineage: PASS. The previous action `gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur` is \"Reduce the committeeMinSize parameter from 7 to 5\", the last enacted ParameterChange (enacted in epoch 643; Koios proposal_list).\n- Section 5, payload matches the anchor: PASS. “No other protocol parameters are changed by this action.” (proposal anchor `body.abstract` line 1) The on-chain update is `{\"min_pool_cost\": 75000000}` (Koios).\n- Section 5, motivation backed by public data or a model: PASS. The anchor's model uses an “approximate gross reward per block ~300 ada” (proposal anchor `body.rationale` line 7). Koios epoch_info for epoch 656 gives an average reward of 291,054,149 lovelace per block over 21,215 blocks. At that rate 170 ada is 58.4% and 75 ada is 25.8% of a one-block pool's gross reward, in line with the anchor's 57% and 25%.\n- Section 5, endorsement by a technical body: not relied on. The anchor states “The TSC ratified this reduction on 2026-07-09.” (proposal anchor `body.rationale` line 3) Talos cannot verify that from the anchor, the constitution or Koios.\n- Section 5, second-order effects quantified: PASS.\n  - SPO economics: the per-block shares above, and “of 1,614 active pools, 873 operators (54%) remain below the roughly 3M ada delegation threshold associated with consistent block production” (proposal anchor `body.rationale` line 29).\n  - Treasury inflow: the constitution orders the reward steps. “The treasury cut portion of the monetary expansion is transferred to the treasury before any pool rewards are paid” (Constitution v2.4, Appendix I, Section 2.2), while “The minimum pool cost is transferred to the pool rewards address before any delegator rewards are paid” (Constitution v2.4, Appendix I, Section 2.2). The treasury cut is taken before minPoolCost applies, so it does not change; the anchor calls the remaining effect marginal: “a reduction in `minPoolCost` marginally decreases treasury inflow” (proposal anchor `body.rationale` line 21).\n  - Script-cost budgets: unchanged; only `min_pool_cost` changes.\n- Section 5 No conditions: none apply. No guardrail is violated, the payload matches, and minPoolCost is an economic parameter, not a security-group one: “The economic parameter group consists of:” (Constitution v2.4, Appendix I, Section 9) and the list includes “*minimum fixed rewards cut for pools* (*minPoolCost*)” (Constitution v2.4, Appendix I, Section 9).\n- Section 5 Abstain conditions: none apply. The lineage is valid, the effect needs no later action, and the status quo is not harmless: “the delegator penalty on single-block pools, which fell to ~28.3% after the 2023 change, has since climbed back to ~52.8% and is projected to reach 100% by around epoch 758 (February 2028) if unaddressed.” (proposal anchor `body.motivation` line 1) That projection is the anchor's; the per-block share above is Talos's own check.\n- Constitution, Article II, Section 6(3): “\"Hard Fork Initiation\" and \"Parameter Update\" actions shall undergo sufficient technical review and scrutiny as mandated by the Guardrails to ensure that the governance action does not endanger the security, functionality, performance, or long-term sustainability of the Cardano Blockchain.” (Constitution v2.4, Article II, Section 6(3)) The guardrails that apply are met, including the 90-day public period of PARAM-06a.\n- H5 conflict of interest: none found. Flux Point Studios is not a party to this action (the anchor's author is Cerkoryn; deposit return address `stake1uygyajn4dq8smt779tyaf7f8ha2x5veyuehmtd9lvy8kjjqwmde62`).\n- H6 rationale: this document. The vote's anchor is the CIP-100 vote-context document GovTool generates from the text Talos supplies, at a commit-pinned URL of at most 128 bytes; it carries this document's commit-pinned URL and blake2b-256.\n- H7 precedent: PASS (see the precedent discussion).\n- H8 competing alternatives: none live; the earlier bundled action `gov_action14dr5yg75pchr2sz42djtuflpvx5qnsek29qg7s7cft8lzrqt5vrqqtqntpk` was dropped in epoch 654 (Koios).\n- H9 liveness: any vote keeps Talos active.\n- H10: not a one-way-door action type.\n\n**Decision.** Every gate and every section 5 Yes condition passes.",
+    "references": [
+      {
+        "@type": "GovernanceMetadata",
+        "label": "Proposal anchor: Reduce minPoolCost to 75 ada (75e7882a...#0)",
+        "referenceHash": {
+          "hashAlgorithm": "blake2b-256",
+          "hashDigest": "e32f6117912d810c82f0f153e7bf787024870ddb82601113e580c7d86bd8f384"
+        },
+        "uri": "https://gateway.pinata.cloud/ipfs/bafkreidy6ftyudcx6lwkualmjbgkurhlqo35s6jarq3phxendcr5el6n34"
+      },
+      {
+        "@type": "Other",
+        "label": "Cardano Constitution v2.4. Relevant articles: Article II, Section 6(3); Appendix I, Sections 2.1, 2.2, 2.6 and 9 (MPC-01, MPC-02, MPC-03, PARAM-05a, PARAM-06a)",
+        "referenceHash": {
+          "hashAlgorithm": "blake2b-256",
+          "hashDigest": "b368bdad83c727bbfe86425575233fb914eb76d05d89497f7790cf007fd95f52"
+        },
+        "uri": "ipfs://bafkreieyuknozbtewyurfqoagvplvykadn6a4u6wglupavdz46bbsnnl6e"
+      }
+    ],
+    "summary": "Talos votes YES under Agent T voting policy v1.0. Cutting minPoolCost from 170 to 75 ada meets guardrails MPC-01, MPC-02, PARAM-05a and PARAM-06a and matches its verified anchor. Koios shows 291 ada per block, so 170 ada takes 58% of a one-block pool's reward."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
