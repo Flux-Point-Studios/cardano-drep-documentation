@@ -1,0 +1,128 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "authors": {
+      "@container": "@set",
+      "@context": {
+        "did": "@id",
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@context": {
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature",
+            "witnessAlgorithm": "CIP100:witnessAlgorithm"
+          },
+          "@id": "CIP100:witness"
+        }
+      },
+      "@id": "CIP100:authors"
+    },
+    "body": {
+      "@context": {
+        "conclusion": "CIP136:conclusion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "internalVote": {
+          "@context": {
+            "abstain": "CIP136:abstain",
+            "againstVote": "CIP136:againstVote",
+            "constitutional": "CIP136:constitutional",
+            "didNotVote": "CIP136:didNotVote",
+            "unconstitutional": "CIP136:unconstitutional"
+          },
+          "@id": "CIP136:internalVote"
+        },
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "references": {
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "RelevantArticles": "CIP136:RelevantArticles",
+            "label": "CIP100:reference-label",
+            "referenceHash": {
+              "@context": {
+                "hashAlgorithm": "CIP100:hashAlgorithm",
+                "hashDigest": "CIP108:hashDigest"
+              },
+              "@id": "CIP108:referenceHash"
+            },
+            "uri": "CIP100:reference-uri"
+          },
+          "@id": "CIP100:references"
+        },
+        "summary": "CIP136:summary"
+      },
+      "@id": "CIP136:body"
+    },
+    "hashAlgorithm": "CIP100:hashAlgorithm"
+  },
+  "authors": [],
+  "body": {
+    "conclusion": "Talos votes No on this treasury withdrawal under Agent T voting policy v1.0, rule H4(a): the verified budget does not break USD 1,831,000 into costs per deliverable, so its value for money can be neither judged nor benchmarked. Every other gate passes, including the 500M ada Net Change Limit. Talos would vote Yes on a resubmission that keeps this structure and adds costs per workstream, for example engineer-weeks and rates for each Reference Implementation and library component and the price of the 22 security researcher-weeks, benchmarked against comparable funded Cardano work. The anchor says OpenZeppelin would return with a revised submission if this one does not pass; Talos would review it on these terms. Prepared by Agent T, an AI agent operated by Flux Point Studios; cast by the Talos key holder.",
+    "counterargumentDiscussion": "**The strongest case for Yes.** Payment is gated and unspent funds return (H4(c) above), so delivery risk is bounded even without a cost breakdown.\n\n**Answer.** Gating controls whether work is delivered, not whether its price is right. Without costs per deliverable DReps cannot compare USD 366,200 per quarter with comparable funded Cardano work, and the kick-off tranche of 2,288,750 ada is paid before any deliverable, on legal sign-off alone.\n\n**Open source and published audits.** “All security findings and reports will be published alongside the audited releases.” (proposal anchor `body.rationale` line 86) This strengthens accountability (H4(c)); it does not price the work (H4(a)).\n\n**Open scope.** “The specific smart contract language targeted will be determined during the initial evaluation phase in collaboration with ecosystem stakeholders.” (proposal anchor `body.rationale` line 52) An open scope makes a cost breakdown more important, not less.\n\n**Track record elsewhere.** The anchor's \"Why OpenZeppelin\" section cites adoption figures from outside Cardano. Talos cannot check them against the anchor's own evidence, the constitution or Koios, so under policy v1.0 (P2, verifiability) they carry no weight either way.\n\n**Dissent check (policy v1.0, section 6).** Koios proposal_voting_summary, epoch 658 (fetched 2026-10-01T14:28Z): DRep votes 10 Yes, 52 No, 11 Abstain; Yes stake 128,846,422 ada, explicit No stake 1,423,529,935 ada. A No sides with 91.7% of the stake that voted Yes or No, so the check (opposing 80% or more) does not trigger. Constitutional Committee: 3 Yes. Policy v1.0 bars strategic voting; the tally did not inform the vote.\n\n**Principle conflict.** P6 (builder enablement) favours an audited contracts library for Cardano. P3 (treasury stewardship and value for money) ranks above P6 in policy v1.0, so the missing cost breakdown decides.",
+    "precedentDiscussion": "Talos's earlier votes on the same programme, from Koios vote_list for `drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8` (85 votes; none since epoch 640).\n\n**Net Change Limit for epochs 613 to 713.**\n- Epoch 615: No on the 300M ada NCL for this period (`gov_action1wwjwkg2g0qwr0mehey9r8gwn6qz3r28wl6wdl2s75kfmpy8j87tqqtft9tp`, vote tx `48d0cca36e42...`). Talos wrote “A 300M limit that consumes 98% of annual inflows isn't a guardrail” (Talos rationale, Koios vote_list `body.comment` line 7) and “Real discipline requires spending meaningfully less than inflows to build reserves against market downturns and future ecosystem needs.” (Talos rationale, Koios vote_list `body.comment` line 3)\n- Epoch 640: Yes on the 500M ada NCL this action relies on (`gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq`, vote tx `e89776901b93...`), with no rationale.\n\nThat NCL states “This is not a mandate to spend; DReps retain full discretion to approve or reject each Treasury Withdrawal.” (500M NCL anchor `body.motivation` line 1) A No here is consistent with both votes: agreeing a ceiling does not commit Talos to any spend under it, and the epoch 615 rationale asked for spending meaningfully less than inflows. The switch from No on 300M to Yes on 500M carried no stated reason; policy v1.0 records it as an inconsistency, and this rationale does not lean on it.\n\n**Withdrawals paid to the same 2026 Treasury Reserve Smart Contract** (`stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v`, which the anchor names as Intersect's 2026 contract). Talos voted on 9 of them in epoch 640, 7 Yes and 2 No (Koios vote_list joined with proposal_list):\n- Yes: Se7en Labs: Daedalus Wallet Maintenance and Improvements 2026-2027 (`gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j`, vote tx `e1a134bac5ae...`)\n- No: Blockfrost's transformation to not-for-profit (`gov_action12sumv9qky4pkenmqp7gshv9nxqdk9zyn8gkd77fewkyy3t5tnxtsq457vgq`, vote tx `e1a134bac5ae...`)\n- Yes: Withdraw 1,193,000 ada for Intersect Technical Steering Committee Support (`gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sxypfkyr`, vote tx `e1a134bac5ae...`)\n- Yes: Withdraw 4,969,231 ada for Cardano Enterprise Adoption: Ticketing Platform (`gov_action1xk6yrz0tg72a2a63ytd99gapz46nlqlavckarleqt6nr8lyekd8qqp0ga3d`, vote tx `e1a134bac5ae...`)\n- Yes: Withdraw 540,750 ada for by TxPipe Dolos: Maintaining Cardano's Lightweight D... (`gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sztttste`, vote tx `1694244928c2...`)\n- Yes: Withdraw 540,750 ada for UTxO RPC by TxPipe: Maintaining Cardano’s Integratio... (`gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s5z9qdza`, vote tx `1694244928c2...`)\n- No: Withdraw 1,162,746 ada for MLabs Core Tool Maintenance & Enhancement: Plutarc... (`gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8svfsvefn`, vote tx `e89776901b93...`)\n- Yes: Withdraw 540,750 ada for Pallas by TxPipe: Maintaining Cardano's Core Rust Li... (`gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8ssd0ztd8`, vote tx `e89776901b93...`)\n- Yes: Withdraw 1,684,050 ada for Tx3 by TxPipe: Open API Layer for Cardano's dApp P... (`gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sj72rg72`, vote tx `e89776901b93...`)\n\nNone of those votes carried a rationale, so their reasoning cannot be compared. A No here does not break a pattern: Talos has already voted No on proposals funded through this contract.\n\n**Cost breakdown and benchmarking.**\n- Epoch 598: No on the Info action \"Cardano Critical Integrations Budget\" (vote tx `1dcae1a92540...`): “The proposal lists a single lump sum without a granular breakdown or cost-justification for each integration.” (Talos rationale, Koios vote_list `body.comment` line 7)\n- Epoch 615: Yes on \"Amaru Treasury Withdrawal 2026\" (vote tx `4f323836df5a...`), citing a benchmark: “Competitive pricing: $225k/FTE aligns with comparable core development proposals (IOE at $302-346k, Tweag at $332k).” (Talos rationale, Koios vote_list `body.comment` line 17)\n\nThis vote applies the same test: Talos funds work whose cost basis can be compared and declines when it cannot. Talos's Yes on the 70M ada Critical Integrations withdrawal in epoch 601 (vote tx `f42de05b5f37...`), cast with no rationale, departed from the epoch 598 reasoning; policy v1.0 lists it as an inconsistency to avoid, and this vote does not repeat it.\n\n**OpenZeppelin.** No earlier Talos vote; the anchor says this is OpenZeppelin's first request (H4(e)).\n\n**Consistency check: consistent.** The No contradicts no earlier Talos vote on the same proposer, programme, budget line or NCL period (policy v1.0, H7).",
+    "rationaleStatement": "**Vote: No.**\n\nThis rationale was prepared by Agent T, an AI agent operated by Flux Point Studios, under Agent T voting policy v1.0 (in force since 2026-10-01; sha256 c72713caad2af548971ff56fe5c976f959486841fc534dd3c1d7cd4c5184e763, blake2b-256 502c06d1e50623dbc473936900dd2c4a834e9d8031870af91cebccf3baec90fa). The holder of the Talos DRep key casts the vote.\n\n**Action.** `418df5986f50547ec4a709f1a5bce6b850753ad6614c873386b7c953fee84a9f#0` (`gov_action1gxxltxr02p28a398p8c6t08xhpg82wkkv9xgwvuxkly48lhgf20sqlkl2l8`), \"Withdraw 11,787,063 ada for the OpenZeppelin Stack administered by Intersect\". On chain: 11,787,063,000,000 lovelace to `stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v`, guardrail script `fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64` (Koios proposal_list). Proposed in epoch 654; votes are accepted through epoch 660 (Koios expiration 661).\n\n**What Talos verified itself.**\n- Proposal anchor `ipfs://bafkreih7qyzwndjjrltybe4ft3a5ryl56gqzof3d4u55jzv2zhatmrqape`: 26,897 bytes whose blake2b-256 equals the on-chain anchor hash `3f0173bf9af7f772002cb18283018e69d780be215c7ddaeafe2e7f9076fdc0fc` and whose sha256 equals the CID digest.\n- Constitution v2.4 `ipfs://bafkreieyuknozbtewyurfqoagvplvykadn6a4u6wglupavdz46bbsnnl6e`: blake2b-256 equals `b368bdad83c727bbfe86425575233fb914eb76d05d89497f7790cf007fd95f52`, the anchor hash of the constitution enacted in epoch 609 (Koios proposal_list).\n- The Net Change Limit action this proposal cites, `gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq`: anchor `ipfs://QmXFz2SrMXustcHZzmg6kz3vXRThebgyZ4pChF9grxqqMD`, whose blake2b-256 equals its on-chain hash `d420037401626f4db20a255ca52d9d39764f68edfdc02686007cf9c731564f88`.\n\n**Rule trace (policy v1.0).**\n- H1 anchor integrity: PASS.\n- H2 verified constitution: PASS.\n- H3 guardrails: PASS. The action carries the constitution's guardrail script hash. TREASURY-03a: “TREASURY-03a (x) Withdrawals from the Cardano Blockchain treasury must be denominated in ada” (Constitution v2.4, Appendix I, Section 3). The withdrawal is stated in lovelace. TREASURY-01a and TREASURY-02a are checked under H4(d).\n- H4(a) itemized budget: **FAIL.** “The project funding requested for delivery is USD $1,831,000 over 12 months.” (proposal anchor `body.rationale` line 125) “This total is distributed as 11,443,750 ada for delivery plus a 343,313 ada Intersect administration fee (3%).” (proposal anchor `body.rationale` line 125) Per the anchor's budget table, the delivery budget is paid in five equal tranches of 2,288,750 ada (USD 366,200 each, 20%): a kick-off payment and four milestones. “The remaining 80% is paid in four equal stablecoin denominated milestone payments, per the milestone table below.” (proposal anchor `body.rationale` line 127) No cost is given for any workstream or deliverable. The one quantified input carries no price: “OpenZeppelin will dedicate 22 researcher-weeks of security capacity over 12 months” (proposal anchor `body.rationale` line 78). The library scope is open: “The component list below is preliminary and indicative.” (proposal anchor `body.rationale` line 52) A payment schedule is not a cost breakdown: it does not show what each Reference Implementation, library component or audit costs.\n- H4(b) dated milestones with acceptance criteria: PASS. “Delivery runs twelve months in four quarterly milestones” (proposal anchor `body.rationale` line 112); each milestone in the table carries dates and acceptance criteria.\n- H4(c) accountability: PASS. Intersect is the named administrator. “An Oversight Committee consisting of six external, independent third-party entities will provide checks and balances on Intersect, and safeguard against errors and unilateral control.” (proposal anchor `body.rationale` line 166) “Each of the four milestone payments is released only after: (i) OpenZeppelin submits the Milestone Acceptance Form with publicly accessible evidence against every acceptance criterion; and (ii) Intersect Delivery Assurance verifies and approves.” (proposal anchor `body.rationale` line 129) “Funds remaining in the contract at expiry sweep back to the Cardano Treasury automatically at the contract level.” (proposal anchor `body.rationale` line 129) Koios account_info (2026-10-01) shows `stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v` delegated to `drep_always_abstain` with no stake pool.\n- H4(d) Net Change Limit headroom: PASS. The anchor states “The requested amount does not at time of submission, on its own or in aggregate, breach the applicable 500M” (proposal anchor `body.rationale` line 144). The cited NCL reads “By this Info action, the DReps agree a new Net Change Limit of 500,000,000 ada (500,000,000,000,000 lovelace) for the Cardano Treasury, for the period beginning at the start of Epoch 613 (February 13, 2026) and ending at the close of Epoch 713 (on or about July 3, 2027).” (500M NCL anchor `body.abstract` line 1) and “it is the applicable Net Change Limit for the period and supersedes any prior Net Change Limit for the same period.” (500M NCL anchor `body.abstract` line 1) Koios proposal_voting_summary for that action at its last epoch (647): DRep Yes 62.35% (2,323,720,371 ada Yes against 1,402,968,091 ada No, non-voting stake included), above the bar in “TREASURY-01a (x) A Net Change Limit for the Cardano Treasury's balance per period of time must be agreed by the DReps via an on-chain governance action with a threshold of greater than 50% of the active voting stake” (Constitution v2.4, Appendix I, Section 3). Koios lists 30 treasury withdrawals enacted in epochs 613 to 658, totalling 457,395,629 ada; with this action the total would be 469,182,692 ada, inside the 500,000,000 ada limit, as “TREASURY-02a (x) Withdrawals from the Cardano Blockchain treasury must not exceed the Net Change Limit for the Cardano Treasury's balance per period of time” (Constitution v2.4, Appendix I, Section 3) requires. No other treasury withdrawal is live or ratified and unenacted (Koios proposal_list, 2026-10-01). The earlier 350M ada NCL for the same period (`gov_action1m3xx08yv788vfxqh6nfvrjtvmqpwezsy0ggaczctkyjmttc2wmxsq4jsr7q`, DRep Yes 61.33% at epoch 612) said “Unless superseded by a new NCL, this is the maximum amount that can be withdrawn from the treasury during this specific period and shall not be exceeded.” (350M NCL anchor `body.abstract` line 3); the enacted total already exceeds 350M ada, and the 500M ada NCL supersedes it.\n- H4(e) disclosure of prior treasury funding: PASS. “In accordance with Article II, Section 7(2), OpenZeppelin discloses that it has not received ada from the Cardano Treasury within the prior 24 months, nor Project Catalyst funding.” (proposal anchor `body.rationale` line 154)\n- Section 5, cost per deliverable benchmarked against comparable funded work: **FAIL.** With no cost per deliverable there is nothing to benchmark.\n- Section 5, upfront payment of at most 20%: PASS. “A kick-off payment of 20% of the delivery budget (subject only to legal sign-off) is released once the Legal Contract is signed.” (proposal anchor `body.rationale` line 127)\n- Section 5, earlier treasury deliverables verified: not applicable. “This is OpenZeppelin's first funding request to the Cardano Treasury.” (proposal anchor `body.rationale` line 154)\n- H5 conflict of interest: indirect tier. Disclosure: Flux Point Studios, which operates Agent T, builds software on Cardano and could use an open-source contracts library. Policy v1.0 treats a benefit shared by all builders as an indirect interest: disclosed, and the vote is cast normally.\n- H6 rationale: this document, at a commit-pinned URL; the vote's anchor hash is the blake2b-256 of its exact bytes.\n- H7 precedent: PASS; no earlier vote is contradicted (see the precedent discussion).\n- H8 competing alternatives: none; this is the only live treasury withdrawal (Koios proposal_list, 2026-10-01).\n- H9 liveness: any vote keeps Talos active (Koios drep_info: the DRep expires after epoch 660 without a vote).\n- H10 operator countersign: required for withdrawals of 10M ada or more; the key holder's cast is the countersign.\n\n**Constitution, Article II, Section 7.** The finding above applies Talos's own policy, which asks for more than the constitution does. Read against the constitution, the anchor meets each item:\n- 7(1) “\"Treasury Withdrawals\" actions must specify the terms of the withdrawal. This shall include: the purpose of the withdrawal, the period for delivery of proposed activities which the withdrawal shall be used for, the relevant costs and expenses of the proposed activities, circumstances under which the withdrawal might be refunded to the Cardano Treasury.” (Constitution v2.4, Article II, Section 7(1)) The anchor gives the purpose, a twelve-month delivery period, total costs and the sweep-back.\n- 7(2) “\"Treasury Withdrawals\" actions shall disclose whether the prospective recipient of the \"Treasury Withdrawals\" action has received ada from the Cardano Treasury within the last 24 months.” (Constitution v2.4, Article II, Section 7(2)) Met (H4(e)).\n- 7(3) “A Net Change Limit must be set. \"Treasury Withdrawals\" actions must not exceed the Net Change Limit for that period.” (Constitution v2.4, Article II, Section 7(3)) Met (H4(d)).\n- 7(4) “\"Treasury Withdrawals\" actions shall require an allocation of ada as a part of such funding request to cover the cost of periodic independent audits and the implementation of oversight metrics as to the use of such ada.” (Constitution v2.4, Article II, Section 7(4)) The anchor answers “Audit and oversight costs are included within the overhead applied to this proposal.” (proposal anchor `body.rationale` line 150) and “The Intersect administration fee covers administrative oversight and is reflected within the cost of this proposal.” (proposal anchor `body.rationale` line 150) An allocation is stated but not quantified; Talos does not rest its vote on this item.\n- 7(5) “\"Treasury Withdrawals\" actions shall designate one or more administrators responsible for monitoring how the funds are used, and ensuring the deliverables are achieved.” (Constitution v2.4, Article II, Section 7(5)) Met: Intersect.\n- 7(6) “such accounts shall not be delegated to an SPO but must be delegated to the predefined abstain voting option.” (Constitution v2.4, Article II, Section 7(6)) Met: “All instances of TRSC and PSSC can not be staked with a SPO and are delegated to the auto-abstain predefined DRep.” (proposal anchor `body.rationale` line 187) Koios account_info confirms it for the reserve contract's stake address.\n\n**Decision.** H4(a) fails, and the section 5 benchmark condition cannot be met without costs per deliverable. Under policy v1.0 the burden of proof is on the proposer and a missing H4 item is a No. Every other gate passes.",
+    "references": [
+      {
+        "@type": "GovernanceMetadata",
+        "label": "Proposal anchor: Withdraw 11,787,063 ada for the OpenZeppelin Stack administered by Intersect (418df598...#0)",
+        "referenceHash": {
+          "hashAlgorithm": "blake2b-256",
+          "hashDigest": "3f0173bf9af7f772002cb18283018e69d780be215c7ddaeafe2e7f9076fdc0fc"
+        },
+        "uri": "ipfs://bafkreih7qyzwndjjrltybe4ft3a5ryl56gqzof3d4u55jzv2zhatmrqape"
+      },
+      {
+        "@type": "Other",
+        "label": "Cardano Constitution v2.4. Relevant articles: Article II, Section 7; Appendix I, Section 3 (TREASURY-01a, TREASURY-02a, TREASURY-03a)",
+        "referenceHash": {
+          "hashAlgorithm": "blake2b-256",
+          "hashDigest": "b368bdad83c727bbfe86425575233fb914eb76d05d89497f7790cf007fd95f52"
+        },
+        "uri": "ipfs://bafkreieyuknozbtewyurfqoagvplvykadn6a4u6wglupavdz46bbsnnl6e"
+      },
+      {
+        "@type": "GovernanceMetadata",
+        "label": "Net Change Limit: Cardano Treasury (Epochs 613-713), gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq",
+        "referenceHash": {
+          "hashAlgorithm": "blake2b-256",
+          "hashDigest": "d420037401626f4db20a255ca52d9d39764f68edfdc02686007cf9c731564f88"
+        },
+        "uri": "ipfs://QmXFz2SrMXustcHZzmg6kz3vXRThebgyZ4pChF9grxqqMD"
+      },
+      {
+        "@type": "GovernanceMetadata",
+        "label": "Talos rationale, epoch 598: No on Cardano Critical Integrations Budget",
+        "referenceHash": {
+          "hashAlgorithm": "blake2b-256",
+          "hashDigest": "bffa72a0d01dee842bae0a4c4e10a7213116f443b987a0869d04d05e6f983e53"
+        },
+        "uri": "https://most-brass-sun.quicknode-ipfs.com/ipfs/QmdYFgihWXQCPtseKqqNHy6wjmTg53fJsK23rMN8bQ9ib3"
+      },
+      {
+        "@type": "GovernanceMetadata",
+        "label": "Talos rationale, epoch 615: No on the 300M ada NCL for epochs 613 to 713",
+        "referenceHash": {
+          "hashAlgorithm": "blake2b-256",
+          "hashDigest": "42e5d0d3a52d87727e5719cda2723d9591a65157ab16925ecd89b417317f2b15"
+        },
+        "uri": "https://most-brass-sun.quicknode-ipfs.com/ipfs/QmRFfhTFRZKT4YTVGhsxudEQLA9Gc7AXhz5oWX4vuXTNjM"
+      },
+      {
+        "@type": "GovernanceMetadata",
+        "label": "Talos rationale, epoch 615: Yes on Amaru Treasury Withdrawal 2026",
+        "referenceHash": {
+          "hashAlgorithm": "blake2b-256",
+          "hashDigest": "0632f1cf8d158de67ce614e90937216eaf5fbf35fa48ff59bb2077775d66be7e"
+        },
+        "uri": "https://most-brass-sun.quicknode-ipfs.com/ipfs/QmX1RycRnZ33L9TVa1LStGiNxdX5txxFzYuvue3bGNS9XS"
+      }
+    ],
+    "summary": "Talos votes NO under Agent T voting policy v1.0, rule H4(a). The verified budget splits USD 1,831,000 into five equal 20% tranches with no cost per deliverable, so value for money cannot be judged. Milestones, custody, sweep-back, disclosure and NCL headroom pass."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
