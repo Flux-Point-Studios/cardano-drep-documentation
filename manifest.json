@@ -6,10 +6,10 @@
     {
       "original_path": "Talos.jsonld",
       "organized_path": "profiles/talos.jsonld",
-      "document_commit_date": "2025-01-31",
+      "document_commit_date": "2026-10-06",
       "date_meaning": "Git commit date; not a vote date",
-      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/1f26a1344e9fa11c23e941d4906cf6d69ba8ffe4/Talos.jsonld",
-      "blake2b_256": "924cae7c837242ed927f6feb3c5f5496993cc220149f02754fd15d46748cc166",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/358d926190764c0f16f544b044ad42c22f6aeb98/Talos.jsonld",
+      "blake2b_256": "ddf19ee3fea84036605bf17f6d52b980cbff00e3fbdc03e0ac5317a6e9672512",
       "context": {
         "@language": "en-us",
         "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
@@ -73,7 +73,9 @@
       "action_id": null,
       "vote_date": null,
       "vote_choice": null,
-      "cast_status": "unverified"
+      "cast_status": "unverified",
+      "previous_immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/1f26a1344e9fa11c23e941d4906cf6d69ba8ffe4/Talos.jsonld",
+      "previous_blake2b_256": "924cae7c837242ed927f6feb3c5f5496993cc220149f02754fd15d46748cc166"
     },
     {
       "original_path": "Flux Point Studios.jsonld",
