@@ -1,0 +1,123 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Flux Point Studios"
+    },
+    "motivations": {
+      "@value": "We believe in fostering a truly decentralized ecosystem founded on transparency, community empowerment, and innovation. Our overarching goal is to harness our expertise in AI, data analysis, and advanced project management to unite diverse communities—ranging from gaming enthusiasts to enterprise-level stakeholders. By embracing open-source principles, we aim to deliver cutting-edge solutions that broaden Cardano’s reach, strengthen its governance, and set new standards for global blockchain adoption."
+    },
+    "objectives": {
+      "@value": "At Flux Point Studios, we bring together entrepreneurial spirit, innovative thinking, and over 16 years of project management experience to shape the future of decentralized governance, AI, and gaming. Our team’s background spans program management, leadership development, consulting, and sales—anchored by a firm belief in integrity, collaboration, and continuous learning. We thrive in fast-paced environments, tackle ambiguity head-on, and champion bold ideas that push the limits of what’s possible in blockchain technology."
+    },
+    "paymentAddress": {
+      "@value": "addr1q9s6m9d8yedfcf53yhq5j5zsg0s58wpzamwexrxpfelgz2wgk0s9l9fqc93tyc8zu4z7hp9dlska2kew9trdg8nscjcq3sk5s3"
+    },
+    "qualifications": {
+      "@value": "Active community members since 2020, building projects on Cardano since 2022, and consistently contributing feedback and insights.\n\nOver a decade of leadership across Fortune 500 organizations and startups—successfully managing budgets, forecasting, and high-performing teams in contact center operations, technical support, and CX.\n\n7+ years of AI/ML experience, 5+ years of professional gaming, and ongoing contributions to open-source AI initiatives—ensuring a unique perspective that blends cutting-edge technology with engaging user experiences.\n\nProven ability to identify key data insights, collaborate effectively across all levels, and deploy improvement initiatives in dynamic, fast-paced environments—facilitating long-term growth and innovation.\n\nCreated the first-ever open-sourced datasets for LLM training.\n\nLaunched cDPT-1 (now “Guest” tier on Cardevia.ai): a free Cardano Development AI Assistant featuring 500+ resources and in-depth documentation."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X"
+        },
+        "uri": {
+          "@value": "https://x.com/fluxpointstudio"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "LinkedIn"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/company/flux-point-studios-inc"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Official Website"
+        },
+        "uri": {
+          "@value": "https://fluxpointstudios.com"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "x.com"
+        },
+        "uri": {
+          "@value": "https://x.com/fluxpointstudio"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "LinkedIn"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/company/flux-point-studios-inc"
+        }
+      }
+    ]
+  }
+}

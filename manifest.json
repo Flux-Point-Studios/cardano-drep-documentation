@@ -1,0 +1,1165 @@
+{
+  "version": 1,
+  "base_commit": "dbc5a4aebf36a2881af0d112bc514508ea2cb28c",
+  "hash_algorithm": "blake2b-256",
+  "documents": [
+    {
+      "original_path": "Talos.jsonld",
+      "organized_path": "profiles/talos.jsonld",
+      "document_commit_date": "2025-01-31",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/1f26a1344e9fa11c23e941d4906cf6d69ba8ffe4/Talos.jsonld",
+      "blake2b_256": "924cae7c837242ed927f6feb3c5f5496993cc220149f02754fd15d46748cc166",
+      "context": {
+        "@language": "en-us",
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP119:body",
+          "@context": {
+            "references": {
+              "@id": "CIP119:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Identity": "CIP119:IdentityReference",
+                "Link": "CIP119:LinkReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP119:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP119:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "paymentAddress": "CIP119:paymentAddress",
+            "givenName": "CIP119:givenName",
+            "image": "CIP119:image",
+            "objectives": "CIP119:objectives",
+            "motivations": "CIP119:motivations",
+            "qualifications": "CIP119:qualifications",
+            "doNotList": "CIP119:doNotList"
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "givenName",
+        "motivations",
+        "objectives",
+        "paymentAddress",
+        "qualifications",
+        "references"
+      ],
+      "action_id": null,
+      "vote_date": null,
+      "vote_choice": null,
+      "cast_status": "unverified"
+    },
+    {
+      "original_path": "Flux Point Studios.jsonld",
+      "organized_path": "profiles/flux-point-studios.jsonld",
+      "document_commit_date": "2024-12-23",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/e6e194a883de2854cbae2c81c15a84fc11055bf6/Flux%20Point%20Studios.jsonld",
+      "blake2b_256": "ca8130dad45c1d82ca8c9beca3ba49ebf82e77e5bba6f1d6e1d0bd4783bf2b74",
+      "context": {
+        "@language": "en-us",
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP119:body",
+          "@context": {
+            "references": {
+              "@id": "CIP119:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Identity": "CIP119:IdentityReference",
+                "Link": "CIP119:LinkReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP119:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP119:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "paymentAddress": "CIP119:paymentAddress",
+            "givenName": "CIP119:givenName",
+            "image": "CIP119:image",
+            "objectives": "CIP119:objectives",
+            "motivations": "CIP119:motivations",
+            "qualifications": "CIP119:qualifications",
+            "doNotList": "CIP119:doNotList"
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "doNotList",
+        "givenName",
+        "motivations",
+        "objectives",
+        "paymentAddress",
+        "qualifications",
+        "references"
+      ],
+      "action_id": null,
+      "vote_date": null,
+      "vote_choice": null,
+      "cast_status": "unverified"
+    },
+    {
+      "original_path": "AI-Assisted-Lace.jsonld",
+      "organized_path": "history/proposals/talos-assistant-lace.jsonld",
+      "document_commit_date": "2025-02-22",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/12bef7ce690babe9be768989a37ad5a03d5372b3/AI-Assisted-Lace.jsonld",
+      "blake2b_256": "8a00a7f7a3ec20c782b8c14dd1d9b92433edaf7ad388fdf5d9954aea8057b1b6",
+      "context": {
+        "@language": "en-us",
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP108:body",
+          "@context": {
+            "references": {
+              "@id": "CIP108:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP108:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP108:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "title": "CIP108:title",
+            "abstract": "CIP108:abstract",
+            "motivation": "CIP108:motivation",
+            "rationale": "CIP108:rationale"
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "abstract",
+        "motivation",
+        "rationale",
+        "references",
+        "title"
+      ],
+      "action_id": null,
+      "vote_date": null,
+      "vote_choice": null,
+      "cast_status": "unverified"
+    },
+    {
+      "original_path": "Vote_Context.jsonld",
+      "organized_path": "history/votes/cardano-constitution.jsonld",
+      "document_commit_date": "2025-01-31",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/a61c5fbcfef4828866abf57a17cabd31c31c30da/Vote_Context.jsonld",
+      "blake2b_256": "3ec0f669f7ff20e29a254d795faf7cdac5bf3c1b8c433f144a58a79622be0879",
+      "context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP100:body",
+          "@context": {
+            "references": {
+              "@id": "CIP100:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP100:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP100:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "comment": "CIP100:comment",
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "title": "CIP100:update-title",
+                "uri": "CIP100:uri"
+              }
+            }
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "comment"
+      ],
+      "action_id": null,
+      "vote_date": null,
+      "vote_choice": "Yes (document text; ledger not verified)",
+      "cast_status": "unverified"
+    },
+    {
+      "original_path": "Vote_Context_10_tax_cut.jsonld",
+      "organized_path": "history/votes/treasury-cut-10-percent.jsonld",
+      "document_commit_date": "2025-02-14",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/f30c615dca06f8c2b0a652d21ff56d3411fe1b52/Vote_Context_10_tax_cut.jsonld",
+      "blake2b_256": "9f292ff89eb21f9c351624060189bbb1ce35e8354fbe727e76070dd0f0fca81e",
+      "context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP100:body",
+          "@context": {
+            "references": {
+              "@id": "CIP100:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP100:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP100:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "comment": "CIP100:comment",
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "title": "CIP100:update-title",
+                "uri": "CIP100:uri"
+              }
+            }
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "comment"
+      ],
+      "action_id": null,
+      "vote_date": null,
+      "vote_choice": "Yes (document text; ledger not verified)",
+      "cast_status": "unverified"
+    },
+    {
+      "original_path": "Vote_Context_2025_NCL.jsonld",
+      "organized_path": "history/votes/2025-ncl-350-million.jsonld",
+      "document_commit_date": "2025-04-07",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/6ef0b15a712aad240b4b1bd43685e0a180fe3322/Vote_Context_2025_NCL.jsonld",
+      "blake2b_256": "c4892f08c63bb06dc8ebdfa36c13d8ab9635cf112c9d4f9b7d2cc92e8c65d0dc",
+      "context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP100:body",
+          "@context": {
+            "references": {
+              "@id": "CIP100:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP100:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP100:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "comment": "CIP100:comment",
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "title": "CIP100:update-title",
+                "uri": "CIP100:uri"
+              }
+            }
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "comment"
+      ],
+      "action_id": null,
+      "vote_date": null,
+      "vote_choice": "Yes (document text; ledger not verified)",
+      "cast_status": "unverified"
+    },
+    {
+      "original_path": "Vote_Context_2025_NCL-2.jsonld",
+      "organized_path": "history/votes/2025-ncl-competing-proposals.jsonld",
+      "document_commit_date": "2025-04-07",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/8d613de38a84cb262831bab599de2f4dbcfb5af5/Vote_Context_2025_NCL-2.jsonld",
+      "blake2b_256": "54e54bb5a5b07215036ce1121d6fac5928de4d5a1d8b0728ca1b79e1f61e4a3c",
+      "context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP100:body",
+          "@context": {
+            "references": {
+              "@id": "CIP100:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP100:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP100:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "comment": "CIP100:comment",
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "title": "CIP100:update-title",
+                "uri": "CIP100:uri"
+              }
+            }
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "comment"
+      ],
+      "action_id": null,
+      "vote_date": null,
+      "vote_choice": "Yes (document text; ledger not verified)",
+      "cast_status": "unverified"
+    },
+    {
+      "original_path": "Vote_Context_2025_NCL-3.jsonld",
+      "organized_path": "history/votes/2025-ncl-200-million.jsonld",
+      "document_commit_date": "2025-04-28",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/c0887ba3eb17bec1cb4a4429809ad6992fcd871e/Vote_Context_2025_NCL-3.jsonld",
+      "blake2b_256": "6a285c26f155e78084e1071c75549defc2fbbf3d56b342d7bf261ac0089a996d",
+      "context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP100:body",
+          "@context": {
+            "references": {
+              "@id": "CIP100:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP100:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP100:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "comment": "CIP100:comment",
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "title": "CIP100:update-title",
+                "uri": "CIP100:uri"
+              }
+            }
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "comment"
+      ],
+      "action_id": null,
+      "vote_date": null,
+      "vote_choice": "Yes (document text; ledger not verified)",
+      "cast_status": "unverified"
+    },
+    {
+      "original_path": "Vote_Context_2025_Intersect_Budget.jsonld",
+      "organized_path": "history/votes/2025-intersect-ecosystem-budget.jsonld",
+      "document_commit_date": "2025-05-16",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/b8f6697d39e853d05051e1ba836a55a239832ac6/Vote_Context_2025_Intersect_Budget.jsonld",
+      "blake2b_256": "3305ca0f0eefc3567cdf86b6990a968421fad22c512d4e166312d9a30d467462",
+      "context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP100:body",
+          "@context": {
+            "references": {
+              "@id": "CIP100:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP100:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP100:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "comment": "CIP100:comment",
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "title": "CIP100:update-title",
+                "uri": "CIP100:uri"
+              }
+            }
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "comment"
+      ],
+      "action_id": null,
+      "vote_date": null,
+      "vote_choice": "Yes (document text; ledger not verified)",
+      "cast_status": "unverified"
+    },
+    {
+      "original_path": "Vote_Context_Amaru-7-11-25.jsonld",
+      "organized_path": "history/votes/amaru-treasury-withdrawal.jsonld",
+      "document_commit_date": "2025-07-11",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/a292869005ce57b200a00d88833b43f90b414fdd/Vote_Context_Amaru-7-11-25.jsonld",
+      "blake2b_256": "38c9020a648972bbd81e564b5f1bfd3ee07ef27f8ddc82e7b0c8a60cf6b31bfc",
+      "context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP100:body",
+          "@context": {
+            "references": {
+              "@id": "CIP100:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP100:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP100:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "comment": "CIP100:comment",
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "title": "CIP100:update-title",
+                "uri": "CIP100:uri"
+              }
+            }
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "comment"
+      ],
+      "action_id": null,
+      "vote_date": null,
+      "vote_choice": "Yes (document text; ledger not verified)",
+      "cast_status": "unverified"
+    },
+    {
+      "original_path": "Vote_Context_CBDAO_7-18-25.jsonld",
+      "organized_path": "history/votes/cardano-builder-dao-withdrawal.jsonld",
+      "document_commit_date": "2025-07-18",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/38a4e8b8707042aa9300df4b8e2fdac0cf468875/Vote_Context_CBDAO_7-18-25.jsonld",
+      "blake2b_256": "999888e05e6199be2cd633ca675a63b0f981a16666a5219e084e1ede4bdf8f52",
+      "context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP100:body",
+          "@context": {
+            "references": {
+              "@id": "CIP100:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP100:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP100:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "comment": "CIP100:comment",
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "title": "CIP100:update-title",
+                "uri": "CIP100:uri"
+              }
+            }
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "comment"
+      ],
+      "action_id": null,
+      "vote_date": null,
+      "vote_choice": "Yes (document text; ledger not verified)",
+      "cast_status": "unverified"
+    },
+    {
+      "original_path": "Vote_Context_OpenZeppelin_10-1-26.jsonld",
+      "organized_path": "votes/openzeppelin-418df598/rationale.jsonld",
+      "document_commit_date": "2026-10-06",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/d265292e91c1ccfe9c914fe0fd3177317f4d1af3/Vote_Context_OpenZeppelin_10-1-26.jsonld",
+      "blake2b_256": "42a7f14d95be2e12a77d0d5347c61d59326ed1c4fe4da8e86a039cf51cb16d8c",
+      "context": {
+        "@language": "en-us",
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+        "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+        "authors": {
+          "@container": "@set",
+          "@context": {
+            "did": "@id",
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@context": {
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature",
+                "witnessAlgorithm": "CIP100:witnessAlgorithm"
+              },
+              "@id": "CIP100:witness"
+            }
+          },
+          "@id": "CIP100:authors"
+        },
+        "body": {
+          "@context": {
+            "conclusion": "CIP136:conclusion",
+            "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+            "internalVote": {
+              "@context": {
+                "abstain": "CIP136:abstain",
+                "againstVote": "CIP136:againstVote",
+                "constitutional": "CIP136:constitutional",
+                "didNotVote": "CIP136:didNotVote",
+                "unconstitutional": "CIP136:unconstitutional"
+              },
+              "@id": "CIP136:internalVote"
+            },
+            "precedentDiscussion": "CIP136:precedentDiscussion",
+            "rationaleStatement": "CIP136:rationaleStatement",
+            "references": {
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "RelevantArticles": "CIP136:RelevantArticles",
+                "label": "CIP100:reference-label",
+                "referenceHash": {
+                  "@context": {
+                    "hashAlgorithm": "CIP100:hashAlgorithm",
+                    "hashDigest": "CIP108:hashDigest"
+                  },
+                  "@id": "CIP108:referenceHash"
+                },
+                "uri": "CIP100:reference-uri"
+              },
+              "@id": "CIP100:references"
+            },
+            "summary": "CIP136:summary"
+          },
+          "@id": "CIP136:body"
+        },
+        "hashAlgorithm": "CIP100:hashAlgorithm"
+      },
+      "body_fields": [
+        "conclusion",
+        "counterargumentDiscussion",
+        "precedentDiscussion",
+        "rationaleStatement",
+        "references",
+        "summary"
+      ],
+      "action_id": "418df5986f50547ec4a709f1a5bce6b850753ad6614c873386b7c953fee84a9f#0",
+      "vote_date": null,
+      "vote_choice": "No",
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+    },
+    {
+      "original_path": "418df59",
+      "organized_path": "votes/openzeppelin-418df598/vote-context.jsonld",
+      "document_commit_date": "2026-10-06",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/df70f62b9715facc61f2ad676a39afc278a8bff5/418df59",
+      "blake2b_256": "0612ce3e548d5f513763922cdd80bddd3af809fd3e09ffa304f7dffd8dc75e09",
+      "context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP100:body",
+          "@context": {
+            "references": {
+              "@id": "CIP100:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP100:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP100:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "comment": "CIP100:comment",
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "title": "CIP100:update-title",
+                "uri": "CIP100:uri"
+              }
+            }
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "comment"
+      ],
+      "action_id": "418df5986f50547ec4a709f1a5bce6b850753ad6614c873386b7c953fee84a9f#0",
+      "vote_date": null,
+      "vote_choice": "No",
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+    },
+    {
+      "original_path": "Vote_Context_minPoolCost_10-1-26.jsonld",
+      "organized_path": "votes/min-pool-cost-75e7882a/rationale.jsonld",
+      "document_commit_date": "2026-10-06",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/b3eac7c465cffdbc0829435b82f3f10320fdbff2/Vote_Context_minPoolCost_10-1-26.jsonld",
+      "blake2b_256": "c9d4b67ee59e06b239704b7329718275abb6633d8d861adfbad6043e9bc40227",
+      "context": {
+        "@language": "en-us",
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+        "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+        "authors": {
+          "@container": "@set",
+          "@context": {
+            "did": "@id",
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@context": {
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature",
+                "witnessAlgorithm": "CIP100:witnessAlgorithm"
+              },
+              "@id": "CIP100:witness"
+            }
+          },
+          "@id": "CIP100:authors"
+        },
+        "body": {
+          "@context": {
+            "conclusion": "CIP136:conclusion",
+            "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+            "internalVote": {
+              "@context": {
+                "abstain": "CIP136:abstain",
+                "againstVote": "CIP136:againstVote",
+                "constitutional": "CIP136:constitutional",
+                "didNotVote": "CIP136:didNotVote",
+                "unconstitutional": "CIP136:unconstitutional"
+              },
+              "@id": "CIP136:internalVote"
+            },
+            "precedentDiscussion": "CIP136:precedentDiscussion",
+            "rationaleStatement": "CIP136:rationaleStatement",
+            "references": {
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "RelevantArticles": "CIP136:RelevantArticles",
+                "label": "CIP100:reference-label",
+                "referenceHash": {
+                  "@context": {
+                    "hashAlgorithm": "CIP100:hashAlgorithm",
+                    "hashDigest": "CIP108:hashDigest"
+                  },
+                  "@id": "CIP108:referenceHash"
+                },
+                "uri": "CIP100:reference-uri"
+              },
+              "@id": "CIP100:references"
+            },
+            "summary": "CIP136:summary"
+          },
+          "@id": "CIP136:body"
+        },
+        "hashAlgorithm": "CIP100:hashAlgorithm"
+      },
+      "body_fields": [
+        "conclusion",
+        "counterargumentDiscussion",
+        "precedentDiscussion",
+        "rationaleStatement",
+        "references",
+        "summary"
+      ],
+      "action_id": "75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0",
+      "vote_date": null,
+      "vote_choice": "Yes",
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+    },
+    {
+      "original_path": "75e7882",
+      "organized_path": "votes/min-pool-cost-75e7882a/vote-context.jsonld",
+      "document_commit_date": "2026-10-06",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/cdc107108f50acbdab39bf18f8f57020c6c21217/75e7882",
+      "blake2b_256": "a2629ceb60861348ad8ad16d0ab321de92ff1101bff745a862c72e9803994c50",
+      "context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP100:body",
+          "@context": {
+            "references": {
+              "@id": "CIP100:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP100:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP100:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "comment": "CIP100:comment",
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "title": "CIP100:update-title",
+                "uri": "CIP100:uri"
+              }
+            }
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "comment"
+      ],
+      "action_id": "75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0",
+      "vote_date": null,
+      "vote_choice": "Yes",
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+    },
+    {
+      "original_path": "Vote_Context_k-poll_10-1-26.jsonld",
+      "organized_path": "votes/stake-pool-target-f6fd3678/rationale.jsonld",
+      "document_commit_date": "2026-10-06",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/902068499cbcbdeef8dcec65e5efa5962c8ad602/Vote_Context_k-poll_10-1-26.jsonld",
+      "blake2b_256": "e8d4fe81eadd213e0ba7b0562091fe0a3030bc7f8be3c1ea362c62bb38771977",
+      "context": {
+        "@language": "en-us",
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+        "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+        "authors": {
+          "@container": "@set",
+          "@context": {
+            "did": "@id",
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@context": {
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature",
+                "witnessAlgorithm": "CIP100:witnessAlgorithm"
+              },
+              "@id": "CIP100:witness"
+            }
+          },
+          "@id": "CIP100:authors"
+        },
+        "body": {
+          "@context": {
+            "conclusion": "CIP136:conclusion",
+            "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+            "internalVote": {
+              "@context": {
+                "abstain": "CIP136:abstain",
+                "againstVote": "CIP136:againstVote",
+                "constitutional": "CIP136:constitutional",
+                "didNotVote": "CIP136:didNotVote",
+                "unconstitutional": "CIP136:unconstitutional"
+              },
+              "@id": "CIP136:internalVote"
+            },
+            "precedentDiscussion": "CIP136:precedentDiscussion",
+            "rationaleStatement": "CIP136:rationaleStatement",
+            "references": {
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "RelevantArticles": "CIP136:RelevantArticles",
+                "label": "CIP100:reference-label",
+                "referenceHash": {
+                  "@context": {
+                    "hashAlgorithm": "CIP100:hashAlgorithm",
+                    "hashDigest": "CIP108:hashDigest"
+                  },
+                  "@id": "CIP108:referenceHash"
+                },
+                "uri": "CIP100:reference-uri"
+              },
+              "@id": "CIP100:references"
+            },
+            "summary": "CIP136:summary"
+          },
+          "@id": "CIP136:body"
+        },
+        "hashAlgorithm": "CIP100:hashAlgorithm"
+      },
+      "body_fields": [
+        "conclusion",
+        "counterargumentDiscussion",
+        "precedentDiscussion",
+        "rationaleStatement",
+        "references",
+        "summary"
+      ],
+      "action_id": "f6fd3678f12edc58dd8739560149fcdb0b8b6fc77a5f303d49c87c74d1fccb4c#0",
+      "vote_date": null,
+      "vote_choice": "Abstain",
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+    },
+    {
+      "original_path": "f6fd367",
+      "organized_path": "votes/stake-pool-target-f6fd3678/vote-context.jsonld",
+      "document_commit_date": "2026-10-06",
+      "date_meaning": "Git commit date; not a vote date",
+      "immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/8a7d15a5b74a83aa85b0b6b6464cfc1504b1ead8/f6fd367",
+      "blake2b_256": "d6ec7fdc5d56ef3c6021cc28d79e5e750c4193064c6082ab7b0dbbd21f65801b",
+      "context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+          "@id": "CIP100:body",
+          "@context": {
+            "references": {
+              "@id": "CIP100:references",
+              "@container": "@set",
+              "@context": {
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "uri": "CIP100:reference-uri",
+                "referenceHash": {
+                  "@id": "CIP100:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP100:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                }
+              }
+            },
+            "comment": "CIP100:comment",
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "title": "CIP100:update-title",
+                "uri": "CIP100:uri"
+              }
+            }
+          }
+        },
+        "authors": {
+          "@id": "CIP100:authors",
+          "@container": "@set",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "witnessAlgorithm": "CIP100:witnessAlgorithm",
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature"
+              }
+            }
+          }
+        }
+      },
+      "body_fields": [
+        "comment"
+      ],
+      "action_id": "f6fd3678f12edc58dd8739560149fcdb0b8b6fc77a5f303d49c87c74d1fccb4c#0",
+      "vote_date": null,
+      "vote_choice": "Abstain",
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+    }
+  ]
+}
