@@ -75,7 +75,8 @@
       "vote_choice": null,
       "cast_status": "unverified",
       "previous_immutable_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/1f26a1344e9fa11c23e941d4906cf6d69ba8ffe4/Talos.jsonld",
-      "previous_blake2b_256": "924cae7c837242ed927f6feb3c5f5496993cc220149f02754fd15d46748cc166"
+      "previous_blake2b_256": "924cae7c837242ed927f6feb3c5f5496993cc220149f02754fd15d46748cc166",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "Flux Point Studios.jsonld",
@@ -148,7 +149,8 @@
       "action_id": null,
       "vote_date": null,
       "vote_choice": null,
-      "cast_status": "unverified"
+      "cast_status": "unverified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "AI-Assisted-Lace.jsonld",
@@ -214,7 +216,8 @@
       "action_id": null,
       "vote_date": null,
       "vote_choice": null,
-      "cast_status": "unverified"
+      "cast_status": "unverified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "Vote_Context.jsonld",
@@ -278,7 +281,8 @@
       "action_id": null,
       "vote_date": null,
       "vote_choice": "Yes (document text; ledger not verified)",
-      "cast_status": "unverified"
+      "cast_status": "unverified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "Vote_Context_10_tax_cut.jsonld",
@@ -342,7 +346,8 @@
       "action_id": null,
       "vote_date": null,
       "vote_choice": "Yes (document text; ledger not verified)",
-      "cast_status": "unverified"
+      "cast_status": "unverified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "Vote_Context_2025_NCL.jsonld",
@@ -406,7 +411,8 @@
       "action_id": null,
       "vote_date": null,
       "vote_choice": "Yes (document text; ledger not verified)",
-      "cast_status": "unverified"
+      "cast_status": "unverified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "Vote_Context_2025_NCL-2.jsonld",
@@ -470,7 +476,8 @@
       "action_id": null,
       "vote_date": null,
       "vote_choice": "Yes (document text; ledger not verified)",
-      "cast_status": "unverified"
+      "cast_status": "unverified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "Vote_Context_2025_NCL-3.jsonld",
@@ -534,7 +541,8 @@
       "action_id": null,
       "vote_date": null,
       "vote_choice": "Yes (document text; ledger not verified)",
-      "cast_status": "unverified"
+      "cast_status": "unverified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "Vote_Context_2025_Intersect_Budget.jsonld",
@@ -598,7 +606,8 @@
       "action_id": null,
       "vote_date": null,
       "vote_choice": "Yes (document text; ledger not verified)",
-      "cast_status": "unverified"
+      "cast_status": "unverified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "Vote_Context_Amaru-7-11-25.jsonld",
@@ -662,7 +671,8 @@
       "action_id": null,
       "vote_date": null,
       "vote_choice": "Yes (document text; ledger not verified)",
-      "cast_status": "unverified"
+      "cast_status": "unverified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "Vote_Context_CBDAO_7-18-25.jsonld",
@@ -726,7 +736,8 @@
       "action_id": null,
       "vote_date": null,
       "vote_choice": "Yes (document text; ledger not verified)",
-      "cast_status": "unverified"
+      "cast_status": "unverified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "Vote_Context_OpenZeppelin_10-1-26.jsonld",
@@ -807,7 +818,8 @@
       "action_id": "418df5986f50547ec4a709f1a5bce6b850753ad6614c873386b7c953fee84a9f#0",
       "vote_date": null,
       "vote_choice": "No",
-      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "418df59",
@@ -871,7 +883,8 @@
       "action_id": "418df5986f50547ec4a709f1a5bce6b850753ad6614c873386b7c953fee84a9f#0",
       "vote_date": null,
       "vote_choice": "No",
-      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified",
+      "original_path_status": "retained compact anchor alias"
     },
     {
       "original_path": "Vote_Context_minPoolCost_10-1-26.jsonld",
@@ -952,7 +965,8 @@
       "action_id": "75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0",
       "vote_date": null,
       "vote_choice": "Yes",
-      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "75e7882",
@@ -1016,7 +1030,8 @@
       "action_id": "75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0",
       "vote_date": null,
       "vote_choice": "Yes",
-      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified",
+      "original_path_status": "retained compact anchor alias"
     },
     {
       "original_path": "Vote_Context_k-poll_10-1-26.jsonld",
@@ -1097,7 +1112,8 @@
       "action_id": "f6fd3678f12edc58dd8739560149fcdb0b8b6fc77a5f303d49c87c74d1fccb4c#0",
       "vote_date": null,
       "vote_choice": "Abstain",
-      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified",
+      "original_path_status": "historical; current document at organized_path"
     },
     {
       "original_path": "f6fd367",
@@ -1161,7 +1177,8 @@
       "action_id": "f6fd3678f12edc58dd8739560149fcdb0b8b6fc77a5f303d49c87c74d1fccb4c#0",
       "vote_date": null,
       "vote_choice": "Abstain",
-      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified"
+      "cast_status": "prepared; unsigned bundle verified 2026-10-06; submission not verified",
+      "original_path_status": "retained compact anchor alias"
     }
   ]
 }

@@ -14,3 +14,7 @@ The one-off packaging and verification script ran outside the repository under t
 ## Talos account correction · 2026-10-06
 
 Both X Account references in the root and organized Talos profiles now use `https://x.com/agentic_t`. A failing assertion established the old references before editing; the updated references, identical profile bytes, JSON parsing and refreshed manifest hash were checked afterward. The manifest retains the previous immutable profile reference. Historical commit-pinned bytes and all vote anchors remain unchanged. This metadata edit adds no production verification code.
+
+## Root cleanup · 2026-10-06
+
+Removed the 14 redundant loose root JSON-LD files after comparing each with its organized document. Profiles remain under `profiles/`, earlier votes and the Lace proposal under `history/`, and current rationales under per-action `votes/` directories. The three compact root anchor aliases remain. All 17 manifest source URLs were fetched again and matched the organized bytes and manifest hashes. Historical commit-pinned URLs survive removal from the current tree. The account correction was carried forward because PR #7 merged before those commits were included. A failing root-layout assertion preceded the change; the final layout, JSON and hash checks passed. No production verification code was added.
