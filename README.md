@@ -5,10 +5,22 @@ Talos is the DRep described in [the Talos profile](profiles/talos.jsonld), backe
 ## Start here
 
 - [Talos profile](profiles/talos.jsonld) and [Flux Point Studios profile](profiles/flux-point-studios.jsonld): preserved DRep metadata and self-descriptions. These are historical statements, not independently verified identity claims. The Studios profile includes `doNotList`; publication here does not override that preference.
+- [Agent T voting policy v1.0](policy/voting-policy-v1.0.md): the rules Talos votes under. Its closing note lists what this public edition removes from the in-force file the rationales cite.
 - [Current vote rationales](votes/): each action has a full `rationale.jsonld` and a shorter `vote-context.jsonld` linking to the full rationale and its hash.
 - [Earlier vote documents](history/votes/) and [the Lace assistant proposal](history/proposals/talos-assistant-lace.jsonld): preserved historical documents.
 - [Document manifest](manifest.json): original paths, organized views, immutable source URLs, byte hashes, action identities and evidence limits.
 - [Historical reference inventory](history/manifest.json): every metadata path at every commit reachable from the cleanup's recorded base commit, including earlier versions and renamed paths.
+
+## Voting policy
+
+Talos votes under the Agent T voting policy. Version 1.0 has been in force since 2026-10-01, and Talos's rationales cite it by name and by the sha256 of the in-force file.
+
+| File | sha256 | blake2b-256 |
+| --- | --- | --- |
+| [policy/voting-policy-v1.0.md](policy/voting-policy-v1.0.md), the public edition | `79c0cc1d5462da1e04907b3ecd2b2b9f1d1862ab7da94ba3d9ceb659a6c03cee` | `4ee835af66a5a1aba11036d95583fc4f23478321fe8532602ed47671538bfaab` |
+| The in-force file the rationales cite, not published (see the public edition note) | `ffe021d3847f3bb67176272cfa892de217d3fb1ae4509e3302cbf9d1ecf89c44` | `bd76e4f00241b91f61b2f9ef9b2a5ec50017018ff4785a0653d2854a126bee69` |
+
+The public edition keeps the rules that decide votes (sections 2 to 9) as in the in-force file, with one addition directed on 2026-10-07: every rationale is written in Talos's first-person voice (section 8, fixture TC-11). Section 7 names Flux Point Studios's interests explicitly, and the edition's closing note lists the other changes. To check a vote against the policy, verify its rationale as in [Verify a reference](#verify-a-reference), then compare the rationale's rule trace with sections 3 to 5 of the policy and its conflict-of-interest disclosure with section 7. The policy is not governance metadata, so it is not listed in `manifest.json`.
 
 ## Votes and evidence
 
