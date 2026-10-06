@@ -1,0 +1,290 @@
+{
+  "checked_at_utc": "2026-10-06T22:27:16.413078+00:00",
+  "network": "mainnet",
+  "source": "Koios indexed Cardano ledger; vote_list cross-checked against tx_info governance voting procedures and block inclusion",
+  "vote_list_url": "https://api.koios.rest/api/v1/vote_list?voter_id=eq.drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8&limit=1000",
+  "tx_info_request": {
+    "url": "https://api.koios.rest/api/v1/tx_info",
+    "method": "POST",
+    "body": {
+      "_tx_hashes": [
+        "a744aef2d8d1ae1a8fcfb917716ff3b97aae404203c00114e0f4c5ab2aa2c9d9",
+        "d7a52916fa031a3a69496379fcdf6a55ed1823ae8f85fe699bc7ecd3050d9b48",
+        "38b2eed377082acba42103cd68219ca72046e576feaf2f5cb52daf4857b88dbf",
+        "fb761c85d832e5b2d289efbdbe6d69a541a826a260b8a96b0848a0b01f97c329",
+        "f97ff6ba752fee966bce59de4e4af0c5411906c9be7c027edb75c8b6880cf1e1",
+        "6c6557c1011b56d33c7c86de623ef3e34e3ddca80bfc07ddee105d0e92c1aa2e",
+        "355e73de47647b1f3a2189c9a124f18928e57a9a3d46d7e9b26553eb09b2aba0",
+        "e351729062292ed51351d4186996e7ea0390e156eb5ca7a99d3d9096dbb9161c",
+        "da80b171f254ce826987c78bfda9be81c0ab2fd8ccb1709ffa3a931fd5106687",
+        "c15585f443166a1767b6c60582861da3b97a446d61a4f1b6ce498731f5325fa2",
+        "e7c53e775a4f4e69cd702c02f4c539817ce7a3e0857f24f35ca7d93292646915"
+      ],
+      "_governance": true
+    }
+  },
+  "votes": [
+    {
+      "action_id": "8c653ee5c9800e6d31e79b5a7f7d4400c81d44717ad4db633dc18d4c07e4a4fd#0",
+      "proposal_id": "gov_action133jnaewfsq8x6v08ndd87l2yqryp63r30t2dkceacxx5cply5n7sqzlcyqf",
+      "vote": "Yes",
+      "vote_tx_hash": "a744aef2d8d1ae1a8fcfb917716ff3b97aae404203c00114e0f4c5ab2aa2c9d9",
+      "block_height": 11425218,
+      "block_hash": "f82361b180a20b4e79f859384fd842abc33a580cbfd5d47433009e96ab8d412f",
+      "epoch": 537,
+      "cast_at_utc": "2025-01-31T22:05:17Z",
+      "voter_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+      "anchor_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/refs/heads/main/Vote_Context.jsonld",
+      "anchor_blake2b_256": "3ec0f669f7ff20e29a254d795faf7cdac5bf3c1b8c433f144a58a79622be0879",
+      "document_matches_anchor_hash": true,
+      "transaction_url": "https://cardanoscan.io/transaction/a744aef2d8d1ae1a8fcfb917716ff3b97aae404203c00114e0f4c5ab2aa2c9d9",
+      "proposal_title": "Cardano Constitution to Replace the Interim Constitution",
+      "proposal_status": {
+        "ratified_epoch": 541,
+        "enacted_epoch": 542,
+        "dropped_epoch": null,
+        "expired_epoch": null
+      },
+      "anchor_http_status_before_repair": 404
+    },
+    {
+      "action_id": "941502b0aa104c850d197923259444d2b57cab7af18b63143775465aaacc84f5#0",
+      "proposal_id": "gov_action1js2s9v92zpxg2rge0y3jt9zy626he2m67x9kx9phw4r942kvsn6sqfym0d7",
+      "vote": "Yes",
+      "vote_tx_hash": "d7a52916fa031a3a69496379fcdf6a55ed1823ae8f85fe699bc7ecd3050d9b48",
+      "block_height": 11483538,
+      "block_hash": "673c99b1f23eed902556b7a466978426690bd2f4d7c73bcca253855112157cbb",
+      "epoch": 540,
+      "cast_at_utc": "2025-02-14T14:12:50Z",
+      "voter_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+      "anchor_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/refs/heads/main/Vote_Context_10_tax_cut.jsonld",
+      "anchor_blake2b_256": "8620830e9eccacfc69eb0969ffeb725c2d155656d13ee68b5919072eb6600608",
+      "document_matches_anchor_hash": false,
+      "transaction_url": "https://cardanoscan.io/transaction/d7a52916fa031a3a69496379fcdf6a55ed1823ae8f85fe699bc7ecd3050d9b48",
+      "proposal_title": "Decrease Treasury Tax from 20% to 10%",
+      "proposal_status": {
+        "ratified_epoch": null,
+        "enacted_epoch": null,
+        "dropped_epoch": 547,
+        "expired_epoch": 546
+      },
+      "exact_anchor_recovery_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/5c0784205def00bc0a6f31c1a9d18499ff7f8591/Vote_Context_treasury10percent_cut.jsonld",
+      "byte_difference": "Organized reading copy has a trailing newline; ledger anchor bytes do not.",
+      "anchor_http_status_before_repair": 404
+    },
+    {
+      "action_id": "9b62b3c632f329016a968ac25211825bb4f84b12461121c7da3aa11df92370f9#0",
+      "proposal_id": "gov_action1nd3t833j7v5sz65k3tp9yyvztw60sjcjgcgjr37682s3m7frwrusqmd2k80",
+      "vote": "Yes",
+      "vote_tx_hash": "38b2eed377082acba42103cd68219ca72046e576feaf2f5cb52daf4857b88dbf",
+      "block_height": 11706303,
+      "block_hash": "62422d682a87e975b524c2125a4ef306a392356abe6ac796b94de090f36ba3a5",
+      "epoch": 550,
+      "cast_at_utc": "2025-04-07T20:51:47Z",
+      "voter_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+      "anchor_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/refs/heads/main/Vote_Context_2025_NCL.jsonld",
+      "anchor_blake2b_256": "c4892f08c63bb06dc8ebdfa36c13d8ab9635cf112c9d4f9b7d2cc92e8c65d0dc",
+      "document_matches_anchor_hash": true,
+      "transaction_url": "https://cardanoscan.io/transaction/38b2eed377082acba42103cd68219ca72046e576feaf2f5cb52daf4857b88dbf",
+      "proposal_title": "2025 Net Change Limit",
+      "proposal_status": {
+        "ratified_epoch": null,
+        "enacted_epoch": null,
+        "dropped_epoch": 555,
+        "expired_epoch": 554
+      },
+      "anchor_http_status_before_repair": 404
+    },
+    {
+      "action_id": "7f320409d9998712ff3a3cdf0c9439e1543f236a3d746766f78f1fdbe1e06bf8#0",
+      "proposal_id": "gov_action10ueqgzwenxr39le68n0se9peu92r7gm2846xwehh3u0ahc0qd0uqqyljxu5",
+      "vote": "Yes",
+      "vote_tx_hash": "fb761c85d832e5b2d289efbdbe6d69a541a826a260b8a96b0848a0b01f97c329",
+      "block_height": 11706506,
+      "block_hash": "bd88f5e313b079d2dbfeff336251754c292f79100117507b9cc06a682ed12d9c",
+      "epoch": 550,
+      "cast_at_utc": "2025-04-07T22:03:11Z",
+      "voter_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+      "anchor_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/refs/heads/main/Vote_Context_2025_NCL-2.jsonld",
+      "anchor_blake2b_256": "54e54bb5a5b07215036ce1121d6fac5928de4d5a1d8b0728ca1b79e1f61e4a3c",
+      "document_matches_anchor_hash": true,
+      "transaction_url": "https://cardanoscan.io/transaction/fb761c85d832e5b2d289efbdbe6d69a541a826a260b8a96b0848a0b01f97c329",
+      "proposal_title": "Set 2025 Net Change Limit of 300M ADA, 2026 Net Change Limit of 250M ADA",
+      "proposal_status": {
+        "ratified_epoch": null,
+        "enacted_epoch": null,
+        "dropped_epoch": 554,
+        "expired_epoch": 553
+      },
+      "anchor_http_status_before_repair": 404
+    },
+    {
+      "action_id": "7d9fc9fe4cee64fb34e57783378ac869a85c78d6fbcd4078ed131ab6fa3c7db6#0",
+      "proposal_id": "gov_action10k0unljvaej0kd89w7pn0zkgdx59c7xkl0x5q78dzvdtd73u0kmqq5xl5y5",
+      "vote": "Yes",
+      "vote_tx_hash": "f97ff6ba752fee966bce59de4e4af0c5411906c9be7c027edb75c8b6880cf1e1",
+      "block_height": 11795310,
+      "block_hash": "8942b9e2736cc9eec9fb4085085b66ee06618a6221a15cfc83007e7ae1a333a7",
+      "epoch": 554,
+      "cast_at_utc": "2025-04-28T15:19:25Z",
+      "voter_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+      "anchor_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/refs/heads/main/Vote_Context_2025_NCL-3.jsonld",
+      "anchor_blake2b_256": "6a285c26f155e78084e1071c75549defc2fbbf3d56b342d7bf261ac0089a996d",
+      "document_matches_anchor_hash": true,
+      "transaction_url": "https://cardanoscan.io/transaction/f97ff6ba752fee966bce59de4e4af0c5411906c9be7c027edb75c8b6880cf1e1",
+      "proposal_title": "2025 Cardano NCL",
+      "proposal_status": {
+        "ratified_epoch": null,
+        "enacted_epoch": null,
+        "dropped_epoch": 562,
+        "expired_epoch": 561
+      },
+      "anchor_http_status_before_repair": 404
+    },
+    {
+      "action_id": "e14de8d9dc4f4ddf3fe9250a8a926e20f10e99b86bd0610b77d7a054981591ee#0",
+      "proposal_id": "gov_action1u9x73kwufaxa70lfy59g4ynwyrcsaxdcd0gxzzmh67s9fxq4j8hqqk2phgh",
+      "vote": "Yes",
+      "vote_tx_hash": "6c6557c1011b56d33c7c86de623ef3e34e3ddca80bfc07ddee105d0e92c1aa2e",
+      "block_height": 11872855,
+      "block_hash": "74108cc8f24c9181f5a0f1c06e22cbd83f7ae38949463b434e7a502e925165e3",
+      "epoch": 558,
+      "cast_at_utc": "2025-05-16T18:40:33Z",
+      "voter_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+      "anchor_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/main/Vote_Context_2025_Intersect_Budget.jsonld",
+      "anchor_blake2b_256": "3305ca0f0eefc3567cdf86b6990a968421fad22c512d4e166312d9a30d467462",
+      "document_matches_anchor_hash": true,
+      "transaction_url": "https://cardanoscan.io/transaction/6c6557c1011b56d33c7c86de623ef3e34e3ddca80bfc07ddee105d0e92c1aa2e",
+      "proposal_title": "Cardano Blockchain Ecosystem Budget - 275M ada Administered by Intersect",
+      "proposal_status": {
+        "ratified_epoch": null,
+        "enacted_epoch": null,
+        "dropped_epoch": 565,
+        "expired_epoch": 564
+      },
+      "anchor_http_status_before_repair": 404
+    },
+    {
+      "action_id": "60ed6ab43c840ff888a8af30a1ed27b41e9f4a91a89822b2b63d1bfc52aeec45#0",
+      "proposal_id": "gov_action1vrkk4dpuss8l3z9g4uc2rmf8ks0f7j534zvz9v4k85dlc54wa3zsqq68rx0",
+      "vote": "Yes",
+      "vote_tx_hash": "355e73de47647b1f3a2189c9a124f18928e57a9a3d46d7e9b26553eb09b2aba0",
+      "block_height": 12111425,
+      "block_hash": "ebd628a459841657916c0330e625ec28b57b47766aefb5f87857d5861c31188f",
+      "epoch": 569,
+      "cast_at_utc": "2025-07-11T13:13:12Z",
+      "voter_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+      "anchor_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/main/Vote_Context_Amaru-7-11-25.jsonld",
+      "anchor_blake2b_256": "38c9020a648972bbd81e564b5f1bfd3ee07ef27f8ddc82e7b0c8a60cf6b31bfc",
+      "document_matches_anchor_hash": true,
+      "transaction_url": "https://cardanoscan.io/transaction/355e73de47647b1f3a2189c9a124f18928e57a9a3d46d7e9b26553eb09b2aba0",
+      "proposal_title": "Amaru Treasury Withdrawal 2025",
+      "proposal_status": {
+        "ratified_epoch": 570,
+        "enacted_epoch": 571,
+        "dropped_epoch": null,
+        "expired_epoch": null
+      },
+      "anchor_http_status_before_repair": 404
+    },
+    {
+      "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#26",
+      "proposal_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlp5u7pqqr",
+      "vote": "Yes",
+      "vote_tx_hash": "e351729062292ed51351d4186996e7ea0390e156eb5ca7a99d3d9096dbb9161c",
+      "block_height": 12142109,
+      "block_hash": "a7a147bbb60df7e2db79773b07783d14f343616db12279128e1e6a2daf1679a5",
+      "epoch": 570,
+      "cast_at_utc": "2025-07-18T18:52:49Z",
+      "voter_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+      "anchor_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/main/Vote_Context_CBDAO_7-18-25.jsonld",
+      "anchor_blake2b_256": "999888e05e6199be2cd633ca675a63b0f981a16666a5219e084e1ede4bdf8f52",
+      "document_matches_anchor_hash": true,
+      "transaction_url": "https://cardanoscan.io/transaction/e351729062292ed51351d4186996e7ea0390e156eb5ca7a99d3d9096dbb9161c",
+      "proposal_title": "Withdraw \u20b312,000,000 for Cardano Builder DAO administered by Intersect",
+      "proposal_status": {
+        "ratified_epoch": 576,
+        "enacted_epoch": 577,
+        "dropped_epoch": null,
+        "expired_epoch": null
+      },
+      "anchor_http_status_before_repair": 404
+    },
+    {
+      "action_id": "418df5986f50547ec4a709f1a5bce6b850753ad6614c873386b7c953fee84a9f#0",
+      "proposal_id": "gov_action1gxxltxr02p28a398p8c6t08xhpg82wkkv9xgwvuxkly48lhgf20sqlkl2l8",
+      "vote": "No",
+      "vote_tx_hash": "da80b171f254ce826987c78bfda9be81c0ab2fd8ccb1709ffa3a931fd5106687",
+      "block_height": 14034853,
+      "block_hash": "3d68656fbb64175c0aa801c8a8aa004eaabc7b75b611992dc70bae5453e602d3",
+      "epoch": 660,
+      "cast_at_utc": "2026-10-06T21:59:00Z",
+      "voter_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+      "anchor_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/df70f62b9715facc61f2ad676a39afc278a8bff5/418df59",
+      "anchor_blake2b_256": "0612ce3e548d5f513763922cdd80bddd3af809fd3e09ffa304f7dffd8dc75e09",
+      "document_matches_anchor_hash": false,
+      "transaction_url": "https://cardanoscan.io/transaction/da80b171f254ce826987c78bfda9be81c0ab2fd8ccb1709ffa3a931fd5106687",
+      "proposal_title": "Withdraw 11,787,063 ada for the OpenZeppelin Stack administered by Intersect",
+      "proposal_status": {
+        "ratified_epoch": null,
+        "enacted_epoch": null,
+        "dropped_epoch": null,
+        "expired_epoch": null
+      }
+    },
+    {
+      "action_id": "75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0",
+      "proposal_id": "gov_action1whncs25w727rj5tml7lmv48gnaf9mm66sdjds8s3l306et7xmkdsqzqd7s2",
+      "vote": "Yes",
+      "vote_tx_hash": "c15585f443166a1767b6c60582861da3b97a446d61a4f1b6ce498731f5325fa2",
+      "block_height": 14034856,
+      "block_hash": "e00425033783117a78a80543b2832e2e937cf2163010cc5af40e7d5af9f21c94",
+      "epoch": 660,
+      "cast_at_utc": "2026-10-06T22:00:00Z",
+      "voter_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+      "anchor_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/cdc107108f50acbdab39bf18f8f57020c6c21217/75e7882",
+      "anchor_blake2b_256": "a2629ceb60861348ad8ad16d0ab321de92ff1101bff745a862c72e9803994c50",
+      "document_matches_anchor_hash": false,
+      "transaction_url": "https://cardanoscan.io/transaction/c15585f443166a1767b6c60582861da3b97a446d61a4f1b6ce498731f5325fa2",
+      "proposal_title": "Reduce minPoolCost to 75 ada",
+      "proposal_status": {
+        "ratified_epoch": null,
+        "enacted_epoch": null,
+        "dropped_epoch": null,
+        "expired_epoch": null
+      }
+    },
+    {
+      "action_id": "f6fd3678f12edc58dd8739560149fcdb0b8b6fc77a5f303d49c87c74d1fccb4c#0",
+      "proposal_id": "gov_action17m7nv7839mw93hv889tqzj0umv9ckm780f0nq02fep78f50uedxqq6g5mt9",
+      "vote": "Abstain",
+      "vote_tx_hash": "e7c53e775a4f4e69cd702c02f4c539817ce7a3e0857f24f35ca7d93292646915",
+      "block_height": 14034861,
+      "block_hash": "a6b41debf3b22a87d4cb408521b5d9ac8fa6fca06e5012b2cca5f09c2b67bec9",
+      "epoch": 660,
+      "cast_at_utc": "2026-10-06T22:01:21Z",
+      "voter_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+      "anchor_url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/8a7d15a5b74a83aa85b0b6b6464cfc1504b1ead8/f6fd367",
+      "anchor_blake2b_256": "d6ec7fdc5d56ef3c6021cc28d79e5e750c4193064c6082ab7b0dbbd21f65801b",
+      "document_matches_anchor_hash": false,
+      "transaction_url": "https://cardanoscan.io/transaction/e7c53e775a4f4e69cd702c02f4c539817ce7a3e0857f24f35ca7d93292646915",
+      "proposal_title": "Should stakePoolTargetNum (k) be raised from 500 to 1000? (SPO poll)",
+      "proposal_status": {
+        "ratified_epoch": null,
+        "enacted_epoch": null,
+        "dropped_epoch": null,
+        "expired_epoch": null
+      }
+    }
+  ],
+  "restored_legacy_anchors": {
+    "Vote_Context.jsonld": "3ec0f669f7ff20e29a254d795faf7cdac5bf3c1b8c433f144a58a79622be0879",
+    "Vote_Context_10_tax_cut.jsonld": "8620830e9eccacfc69eb0969ffeb725c2d155656d13ee68b5919072eb6600608",
+    "Vote_Context_2025_NCL.jsonld": "c4892f08c63bb06dc8ebdfa36c13d8ab9635cf112c9d4f9b7d2cc92e8c65d0dc",
+    "Vote_Context_2025_NCL-2.jsonld": "54e54bb5a5b07215036ce1121d6fac5928de4d5a1d8b0728ca1b79e1f61e4a3c",
+    "Vote_Context_2025_NCL-3.jsonld": "6a285c26f155e78084e1071c75549defc2fbbf3d56b342d7bf261ac0089a996d",
+    "Vote_Context_2025_Intersect_Budget.jsonld": "3305ca0f0eefc3567cdf86b6990a968421fad22c512d4e166312d9a30d467462",
+    "Vote_Context_Amaru-7-11-25.jsonld": "38c9020a648972bbd81e564b5f1bfd3ee07ef27f8ddc82e7b0c8a60cf6b31bfc",
+    "Vote_Context_CBDAO_7-18-25.jsonld": "999888e05e6199be2cd633ca675a63b0f981a16666a5219e084e1ede4bdf8f52"
+  }
+}
