@@ -1,0 +1,18 @@
+{
+  "status": "unsigned-draft-not-cast",
+  "choice": "Yes",
+  "action_id": "75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0",
+  "replaces_tx": "c15585f443166a1767b6c60582861da3b97a446d61a4f1b6ce498731f5325fa2",
+  "full_rationale": {
+    "url": "https://raw.githubusercontent.com/Flux-Point-Studios/cardano-drep-documentation/86a1354aaf2df6646a56eb6a84f946aa5b7c119f/votes/min-pool-cost-75e7882a/recasts/2026-10-07/rationale.jsonld",
+    "blake2b_256": "3d68181e424fefd7ce37a8735e2c70cfb4e94b7a12c8f5a749c7a0428239ebf1",
+    "sha256": "227a025a40c8f9d1b58d2baf29192270161b739b585a6a2c6e5ac447a31cdc4f"
+  },
+  "vote_context": {
+    "path": "75e7882",
+    "blake2b_256": "ee132335b9a497e419652e79864bdb18b72c5337ed4624d940de393a78019aa9",
+    "sha256": "6430bc2a6b803b9e538dbdc4dcb1a4d8bb8d70c696342ba9bdaa86bb0e4eed32"
+  },
+  "governance_authorship_witness": false,
+  "transaction_signatures": 0
+}
