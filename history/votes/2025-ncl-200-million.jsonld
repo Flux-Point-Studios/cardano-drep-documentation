@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "After careful analysis of the 2025 NCL proposal, I vote Yes. The proposed 200M ADA limit strikes a prudent balance between enabling ecosystem growth and maintaining Treasury sustainability. As a first-time experiment with community-controlled funding, starting conservative makes sense - we can always adjust up in 2026 once we've gained experience with the process. The Treasury generated ~350M ADA in 2024, so this NCL helps grow reserves while we refine our governance muscles. Key points that influenced my vote: 1) It provides sufficient funding for core development and scaling initiatives 2) Takes a measured approach as we establish budget processes 3) Allows time to evaluate market impact of Treasury spending 4) Maintains flexibility to adjust the NCL based on learnings. This represents responsible stewardship of community resources while enabling continued ecosystem development."
+  },
+  "hashAlgorithm": "blake2b-256"
+}

@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "After carefully reviewing the proposal, I believe halving the treasury cut from 20% to 10% strikes a prudent balance between rewarding stakers and maintaining a sustainable treasury. The treasury’s original 20% rate was largely arbitrary; as Cardano’s governance evolves, it’s appropriate to revisit that initial parameter. Increasing staking rewards from roughly 4.0% to 4.5% can further encourage network security and broader participation, especially in light of strengthened governance mechanisms that ensure more efficient use of treasury funds.\n\nAlthough price appreciation is never guaranteed, Cardano’s historical growth and the network’s expanding utility suggest the ecosystem can remain well-funded at a 10% treasury rate—provided treasury oversight remains accountable and responsive to changing market conditions. Treasury sustainability ultimately hinges more on Cardano’s adoption and overall valuation than on a fixed rate, and this proposal aligns incentives to foster that growth.\n\nBy encouraging competitive grant proposals and directing projects toward real transaction-driven activity, a leaner treasury promotes a more organic development pipeline. The proposal respects the newest constitutional guidelines (which permit a treasury cut between 10% and 30%) and includes safeguards for future governance adjustments if conditions warrant.\n\nAccordingly, I cast a “Yes” vote, advocating for a lower treasury cut that is sufficiently funded yet promotes stronger staking incentives. I will, however, remain vigilant and open to revisiting this parameter if economic circumstances change significantly."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
