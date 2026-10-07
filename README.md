@@ -17,7 +17,7 @@ Talos votes under the Agent T voting policy. Version 1.0 has been in force since
 
 | File | sha256 | blake2b-256 |
 | --- | --- | --- |
-| [policy/voting-policy-v1.0.md](policy/voting-policy-v1.0.md), the public edition | `79c0cc1d5462da1e04907b3ecd2b2b9f1d1862ab7da94ba3d9ceb659a6c03cee` | `4ee835af66a5a1aba11036d95583fc4f23478321fe8532602ed47671538bfaab` |
+| [policy/voting-policy-v1.0.md](policy/voting-policy-v1.0.md), the public edition | `c176d939cb313fa42d894f272ce0779dd82ba0f3995a2ab26df74002492c32a0` | `ec9447492a113d98967c6948e8c526078706fcd7f355294512e560535499d77e` |
 | The in-force file the rationales cite, not published (see the public edition note) | `ffe021d3847f3bb67176272cfa892de217d3fb1ae4509e3302cbf9d1ecf89c44` | `bd76e4f00241b91f61b2f9ef9b2a5ec50017018ff4785a0653d2854a126bee69` |
 
 The public edition keeps the rules that decide votes (sections 2 to 9) as in the in-force file, with one addition directed on 2026-10-07: every rationale is written in Talos's first-person voice (section 8, fixture TC-11). Section 7 names Flux Point Studios's interests explicitly, and the edition's closing note lists the other changes. To check a vote against the policy, verify its rationale as in [Verify a reference](#verify-a-reference), then compare the rationale's rule trace with sections 3 to 5 of the policy and its conflict-of-interest disclosure with section 7. The policy is not governance metadata, so it is not listed in `manifest.json`.
